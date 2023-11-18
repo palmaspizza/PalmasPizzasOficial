@@ -143,7 +143,7 @@
     document.getElementById("ventana-pizza-italiana").hidden = true;
     finalizarpedidosuperior.play();
     document.getElementById("pedido-vacio").hidden = true;
-
+    document.getElementById('cantidad-italiana-input').value = '2';
 
 
     
@@ -271,7 +271,7 @@
     finalizarpedidosuperior.play();
     document.getElementById("pedido-vacio").hidden = true;
 
-
+    document.getElementById('cantidad-hawaiana-input').value = '2';
 
     
   }
@@ -409,6 +409,7 @@
     document.getElementById("ventana-pizza-napolitana").hidden = true;
     finalizarpedidosuperior.play();
     document.getElementById("pedido-vacio").hidden = true;
+    document.getElementById('cantidad-napolitana-input').value = '2';
 
 
   }
@@ -516,7 +517,7 @@
     document.getElementById("ventana-pizza-superpepperoni").hidden = true;
     finalizarpedidosuperior.play();
     document.getElementById("pedido-vacio").hidden = true;
-
+    document.getElementById('cantidad-superpepperoni-input').value = '2';
 
 
     
@@ -638,7 +639,7 @@
     finalizarpedidosuperior.play();
     document.getElementById("pedido-vacio").hidden = true;
 
-
+    document.getElementById('cantidad-vegetarian-input').value = '2';
 
     
   }
@@ -756,7 +757,7 @@
     document.getElementById("ventana-pizza-lucopizza").hidden = true;
     finalizarpedidosuperior.play();
     document.getElementById("pedido-vacio").hidden = true;
-
+    document.getElementById('cantidad-lucopizza-input').value = '2';
 
 
     
@@ -876,7 +877,7 @@
     document.getElementById("ventana-pizza-cheeseburger").hidden = true;
     finalizarpedidosuperior.play();
     document.getElementById("pedido-vacio").hidden = true;
-
+    document.getElementById('cantidad-cheeseburger-input').value = '2';
 
 
     
@@ -996,7 +997,7 @@
     document.getElementById("ventana-pizza-chillian").hidden = true;
     finalizarpedidosuperior.play();
     document.getElementById("pedido-vacio").hidden = true;
-
+    document.getElementById('cantidad-chillian-input').value = '2';
 
 
     
@@ -1114,7 +1115,7 @@
       finalizarpedidosuperior.play();
       document.getElementById("pedido-vacio").hidden = true;
   
-  
+      document.getElementById('cantidad-pollobbq-input').value = '2';
   
       
     }
@@ -1190,12 +1191,8 @@
 
   function agregaunapizza(){
     agregarunapizza.play();
-    document.getElementById("input-pizza-dos").value = '';
-    document.getElementById("input-pizza-uno").value = '';
-
     document.getElementById("agregar-italiana-2").hidden = false;
     document.getElementById("agregar-italiana").hidden = true;
-
 
     document.getElementById("agregar-hawaiana-2").hidden = false;
     document.getElementById("agregar-hawaiana").hidden = true;
@@ -1220,6 +1217,7 @@
 
     document.getElementById("agregar-pollobbq-2").hidden = false;
     document.getElementById("agregar-pollobbq").hidden = true;
+
   }
 
 
@@ -1599,7 +1597,7 @@ function ocultarflecha(){
  
 
     <h2 style="color: #ff5500; margin-left: 5%; font-size: 35px; display: grid;">Unitarias</h2>
-    <button type="button" class="buttons" style="margin-left: 5%; margin-right: 5%;" onclick="agregaunapizza();unafamiliar();popup();unapizza();document.getElementById('formato-pizzas').value = '1 Pizza Familiar* %0A'">1 Pizza Familiar <spans style="color: black; font-size: 18px;" >$10.990</span></button>
+    <button type="button" class="buttons" style="margin-left: 5%; margin-right: 5%;" onclick="vaciarpizzas();agregaunapizza();unafamiliar();popup();unapizza();document.getElementById('formato-pizzas').value = '1 Pizza Familiar* %0A'">1 Pizza Familiar <spans style="color: black; font-size: 18px;" >$10.990</span></button>
    
 
  
@@ -1613,6 +1611,11 @@ function ocultarflecha(){
      
   }
 
+  function vaciarpizzas(){
+    document.getElementById("input-pizza-dos").value = '';
+    document.getElementById("input-pizza-uno").value = '';
+  }
+
 
  </script>
 
@@ -1624,7 +1627,7 @@ function ocultarflecha(){
 </div>
     <br>
     <br>
-    <button type="button" class="buttons" style="margin-left: 5%; margin-right: 5%;" onclick="agregaunapizza();unamediana();popup();unapizza();document.getElementById('formato-pizzas').value = '1 Pizza Mediana* %0A';" >1 Pizza Mediana <spans style="color: black; font-size: 18px;" >$8.990</span></button>
+    <button type="button" class="buttons" style="margin-left: 5%; margin-right: 5%;" onclick="vaciarpizzas();agregaunapizza();unamediana();popup();unapizza();document.getElementById('formato-pizzas').value = '1 Pizza Mediana* %0A';" >1 Pizza Mediana <spans style="color: black; font-size: 18px;" >$8.990</span></button>
  <input type="text" class="formulario__input" style="border-bottom: solid 3px black; width: 90%;" disabled>
   <br>
 <h2 style="color: #ff5500; margin-left: 5%; font-size: 35px; display: grid;">Promociones</h2>
