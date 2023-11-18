@@ -19,7 +19,8 @@ const direccionnum = document.querySelector("#direccionnum").value;
 const inputdepartamento = document.querySelector("#inputdepartamento").value;
 
 
-
+// FORMATO
+const formatopizzas = document.querySelector("#formato-pizzas").value;
 
 // ARMA TU PIZZA
 const pizzauno = document.querySelector("#input-pizza-uno").value;
@@ -97,7 +98,7 @@ resp.classList.remove("send");
 
 const url = `https://api.whatsapp.com/send?phone=56952323555&text=
 *🍕=Palmas Pizza=🍕*%0A
-👤*${nombre}*%0A%0A
+👤 *${nombre}*%0A%0A
 *☎️* +56${telefono}%0A%0A
 *Forma de Pago:*%0A
 *${formadepago}*%0A%0A
@@ -107,6 +108,7 @@ ${direccionlugar}+${direccion}+${direccionnum}%0A
 ${inputdepartamento}+${otro}%0A
 --------------------- %0A
 🛎️== *PEDIDO* == 🛎️ %0A
+${formatopizzas}
 ${pizzas}%0A
 ${cantidaditaliana}+${pizzaitaliana}
 ${cantidadhawaiana}+${pizzahawaiana}
