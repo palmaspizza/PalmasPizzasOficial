@@ -633,8 +633,6 @@ function jamonD(){
     function medianasdos() {
     document.getElementById("finalizar-pedido-button").hidden = false;
     document.getElementById("total").value = '14990';
-    document.getElementById("input-pizza-uno").value = '*Pizza 1:* %0A';
-    document.getElementById("input-pizza-dos").value = '*Pizza 2:* %0A';
     document.getElementById("2-siguiente-arma-tu-pizza").hidden = false;
     document.getElementById("agregar-al-pedido-arma-tu-pizza").hidden = true;
     document.getElementById("todo").hidden = false;
@@ -876,8 +874,6 @@ function hiddentitlepizza(){
     function familiaresdos() {
     document.getElementById("finalizar-pedido-button").hidden = false;
     document.getElementById("total").value = '17990';
-    document.getElementById("input-pizza-uno").value = '*Pizza 1:* %0A';
-    document.getElementById("input-pizza-dos").value = '*Pizza 2:* %0A';
     document.getElementById("2-siguiente-arma-tu-pizza").hidden = false;
     document.getElementById("agregar-al-pedido-arma-tu-pizza").hidden = true;
     document.getElementById("pizza-title-2").hidden = false;
