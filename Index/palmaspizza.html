@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=.0">
     <link rel="icon" type="image/x-icon" href="https://scontent.fscl35-1.fna.fbcdn.net/v/t1.15752-9/397959438_700337758714823_4138704959227799791_n.png?stp=dst-png_p280x280&amp;_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=8cd0a2&amp;_nc_eui2=AeFd2lYh71UJJxIqTGtQqYlelfmREYMZEWSV-ZERgxkRZPL4E_VYDYrnee_zWaVC9D6Ezy9wUPMddyTg8lw2srf-&amp;_nc_ohc=CI4L46x-KzkAX9gy94T&amp;_nc_ht=scontent.fscl35-1.fna&amp;oh=03_AdSfbP6A15Hq2xqBIG_eul7kF5WDRPwMd6jnESKT4qo9uw&amp;oe=6574ADC8">
     <link rel="stylesheet" href="/Index/palmaspizza.css">
+    <link rel="stylesheet" href="/Index/ventanas.css">
      <link rel="stylesheet" href="/Index/pizzas.css">
 
     <meta property="og:title" content="Pedir | Palmas Pizza" />
@@ -73,7 +74,7 @@ window.onload = function() {
        <br><br>
           <img style="width: 70%;" src="/Pizzas/italiana.png" alt="">
           <br>
-          <input id="cantidad-italiana-input" type="number" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
+          <input id="cantidad-italiana-input" type="text" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
           <br><br>
         <button type="button" id="agregar-italiana" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="agregarsegundapizza();popup();agregaritaliana();sumartodo();">+ Agregar</button>
         <button type="button" id="agregar-italiana-1" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="popup();agregaritaliana1();sumartodo();" hidden>+ Agregar Pizza 2</button>
@@ -200,7 +201,7 @@ window.onload = function() {
        <br><br>
           <img style="width: 70%;" src="/Pizzas/hawaiana.png" alt="">
           <br>
-          <input id="cantidad-hawaiana-input" type="number" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
+          <input id="cantidad-hawaiana-input" type="text" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
           <br><br>
         <button type="button" id="agregar-hawaiana" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="agregarsegundapizza();popup();agregarhawaiana();sumartodo();">+ Agregar</button>
         <button type="button" id="agregar-hawaiana-1" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="popup();agregarhawaiana1();sumartodo();" hidden>+ Agregar Pizza 2</button>
@@ -327,7 +328,7 @@ window.onload = function() {
        <br><br>
           <img style="width: 70%;" src="/Pizzas/napolitana.png" alt="">
           <br>
-          <input id="cantidad-napolitana-input" type="number" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
+          <input id="cantidad-napolitana-input" type="text" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
           <br><br>
         <button type="button" id="agregar-napolitana" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="agregarsegundapizza();popup();agregarnapolitana();sumartodo();">+ Agregar</button>
         <button type="button" id="agregar-napolitana-1" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="popup();agregarnapolitana1();sumartodo();" hidden>+ Agregar Pizza 2</button>
@@ -447,7 +448,7 @@ window.onload = function() {
        <br><br>
           <img style="width: 70%;" src="/Pizzas/superpepperoni.png" alt="">
           <br>
-          <input id="cantidad-superpepperoni-input" type="number" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
+          <input id="cantidad-superpepperoni-input" type="text" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
           <br><br>
         <button type="button" id="agregar-superpepperoni" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="agregarsegundapizza();popup();agregarsuperpepperoni();sumartodo();">+ Agregar</button>
         <button type="button" id="agregar-superpepperoni-1" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="popup();agregarsuperpepperoni1();sumartodo();" hidden>+ Agregar Pizza 2</button>
@@ -569,7 +570,7 @@ window.onload = function() {
        <br><br>
           <img style="width: 70%;" src="/Pizzas/vegetariana.png" alt="">
           <br>
-          <input id="cantidad-vegetariana-input" type="number" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
+          <input id="cantidad-vegetariana-input" type="text" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
           <br><br>
         <button type="button" id="agregar-vegetariana" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="agregarsegundapizza();popup();agregarvegetariana();sumartodo();">+ Agregar</button>
         <button type="button" id="agregar-vegetariana-1" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="popup();agregarvegetariana1();sumartodo();" hidden>+ Agregar Pizza 2</button>
@@ -688,7 +689,7 @@ window.onload = function() {
        <br><br>
           <img style="width: 70%;" src="/Pizzas/lucopizza.png" alt="">
           <br>
-          <input id="cantidad-lucopizza-input" type="number" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
+          <input id="cantidad-lucopizza-input" type="text" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
           <br><br>
         <button type="button" id="agregar-lucopizza" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="agregarsegundapizza();popup();agregarlucopizza();sumartodo();">+ Agregar</button>
         <button type="button" id="agregar-lucopizza-1" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="popup();agregarlucopizza1();sumartodo();" hidden>+ Agregar Pizza 2</button>
@@ -807,7 +808,7 @@ window.onload = function() {
        <br><br>
           <img style="width: 70%;" src="/Pizzas/cheeseburger.png" alt="">
           <br>
-          <input id="cantidad-cheeseburger-input" type="number" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
+          <input id="cantidad-cheeseburger-input" type="text" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
           <br><br>
         <button type="button" id="agregar-cheeseburger" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="agregarsegundapizza();popup();agregarcheeseburger();sumartodo();">+ Agregar</button>
         <button type="button" id="agregar-cheeseburger-1" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="popup();agregarcheeseburger1();sumartodo();" hidden>+ Agregar Pizza 2</button>
@@ -927,7 +928,7 @@ window.onload = function() {
        <br><br>
           <img style="width: 70%;" src="/Pizzas/chillian.png" alt="">
           <br>
-          <input id="cantidad-chillian-input" type="number" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
+          <input id="cantidad-chillian-input" type="text" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
           <br><br>
         <button type="button" id="agregar-chillian" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="agregarsegundapizza();popup();agregarchillian();sumartodo();">+ Agregar</button>
         <button type="button" id="agregar-chillian-1" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="popup();agregarchillian1();sumartodo();" hidden>+ Agregar Pizza 2</button>
@@ -1045,7 +1046,7 @@ window.onload = function() {
          <br><br>
             <img style="width: 70%;" src="/Pizzas/pollobbq.png" alt="">
             <br>
-            <input id="cantidad-pollobbq-input" type="number" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
+            <input id="cantidad-pollobbq-input" type="text" disabled style="width: 25%; font-size: 160%; text-align: center; background-color: transparent; border: 0px;"></input>
             <br><br>
           <button type="button" id="agregar-pollobbq" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="agregarsegundapizza();popup();agregarpollobbq();sumartodo();">+ Agregar</button>
           <button type="button" id="agregar-pollobbq-1" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="popup();agregarpollobbq1();sumartodo();" hidden>+ Agregar Pizza 2</button>
