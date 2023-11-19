@@ -19,6 +19,18 @@
 </head>
 
 
+<script>
+  let bienvenido = new Audio('/Index/Sounds/bienvenido.mp3');  
+window.onload = function() {
+      bienvenido.play();
+      document.getElementById('carga').style.display = 'block';
+      
+      // Cierra la ventana de carga después de 4 segundos
+      setTimeout(function() {
+          document.getElementById('carga').style.display = 'none';
+      }, 999999999);
+  };</script>
+  
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <div id="promocion-coca-cola-div" hidden>
   <label for="promcioncocacola"></label>
@@ -1300,7 +1312,6 @@ setTimeout(() => {
   let pop = new Audio('/Index/Sounds/pop.mp3');
   let tap = new Audio('/Index/Sounds/tap.mp3');
   let seleccionaropcion = new Audio('/Index/Sounds/seleccionaropcion.mp3');
-  let bienvenido = new Audio('/Index/Sounds/bienvenido.mp3');
   let ingresardatos = new Audio('/Index/Sounds/ingresatusdatos.mp3');
   let seleccionarsalsauno = new Audio('/Index/Sounds/seleccionarsalsanuno.mp3');
   let seleccionarsalsados = new Audio('/Index/Sounds/seleccionarsalsandos.mp3');

@@ -1,3 +1,4 @@
+
 document.querySelector("#submit").addEventListener("click", e => {e.preventDefault();
 
 
@@ -244,15 +245,7 @@ areaDeTexto.value += valor + "\n";
       
       }
     // Abre la ventana de carga automáticamente al cargar la página
-    window.onload = function() {
-      bienvenido.play();
-      document.getElementById('carga').style.display = 'block';
-      
-      // Cierra la ventana de carga después de 4 segundos
-      setTimeout(function() {
-          document.getElementById('carga').style.display = 'none';
-      }, 999999999);
-  };
+
 
   function comenzarpedido() {
     document.getElementById('carga').style.display = 'none';
