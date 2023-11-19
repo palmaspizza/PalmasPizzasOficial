@@ -98,7 +98,7 @@ resp.classList.remove("send");
 
 const url = `https://api.whatsapp.com/send?phone=56952323555&text=
 *🍕=Palmas Pizza=🍕*%0A
-👤 *${nombre}*%0A%0A
+👤${nombre} %0A%0A
 *☎️* +56${telefono}%0A%0A
 *Forma de Pago:*%0A
 *${formadepago}*%0A%0A
