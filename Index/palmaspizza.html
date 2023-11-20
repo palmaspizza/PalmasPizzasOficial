@@ -1712,10 +1712,11 @@ function ocultarflecha(){
                            maxlength="9" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                          />
                      
-                         <p style="position: absolute; z-index: inherit; margin-top: -46.5px; font-size: 150%; font-family: Franklin Gothic Medium; user-select: none; margin-left: 5%;" aria-readolny disabled="true" aria-disabled="true">+56</p>
+                         <p style="position: absolute; z-index: inherit; margin-top: -46.5px; font-size: 150%; font-family: Franklin Gothic Medium; user-select: none; margin-left: 5%;" aria-readolny>+56</p>
                          
-             <br>
-             <br><br> 
+                         <br>
+                         <br><br>     <br>
+                         <br><br> 
                   <center>
                     <label for="direccion" class="formulario__label">Dirección:</label>
                     <h2>¿Donde enviaremos tu pedido?</h2>
@@ -1857,7 +1858,16 @@ document.getElementById("Trabajo-button").classList.remove("buttons");
                              style=" position: relative; width: 30% !important; border: #ff5500 solid 2 px; border-top: 0px;"
                            /> 
 </div>
-
+<label class="formulario__label" for="label-trabajo">Comuna:</label>
+<input
+style="z-index: 1;"
+  id="comuna"
+  type="text"
+  value=""
+  class="formulario__input"
+  placeholder="[Comuna]"
+  style=" position: relative; width: 60% !important;"
+/>
 
 
 
@@ -2036,7 +2046,7 @@ document.getElementById("Trabajo-button").classList.remove("buttons");
     <button type="button" class="button-select" style="box-shadow: white 1px 1px 8px 1px; display: none;" id="chrome-button" onclick="comenzarpedido();">Comenzar Pedido</button>
    
    </center>  <br><br><br>
-     <button type="button" style="width: 70%; height: 50px; padding-left: 20%; font-size: 125%; border: #006aff solid 3px; border-radius: 5px; color: #006aff; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" onclick="window.open('https://spotty-dull-neon.glitch.me/Index/palmaspizza.html', '_blank')"  id="boton-abrir-en-chrome"><input type="image" src="https://cdn.glitch.global/0cdc0922-4852-4dc1-ac8b-b8e4a4ff2065/chromelogo.png?v=1700514312918" style="position: absolute; width: 30px; margin-left: -15%; margin-top: -8px;"> Abrir en Chrome</button>
+     <button type="button" style="width: 70%; height: 50px; padding-left: 20%; font-size: 125%; border: #006aff solid 3px; border-radius: 5px; color: #006aff; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" onclick="window.open('https://spotty-dull-neon.glitch.me/Index/palmaspizza.html', '_blank')" ><input type="image" src="https://cdn.glitch.global/0cdc0922-4852-4dc1-ac8b-b8e4a4ff2065/chromelogo.png?v=1700514312918" style="position: absolute; width: 30px; margin-left: -15%; margin-top: -8px;"> Abrir en Chrome</button>
       </div>
   </div>
 
