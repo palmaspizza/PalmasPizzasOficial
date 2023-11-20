@@ -294,7 +294,7 @@ areaDeTexto.value += valor + "\n";
 
   setInterval(() => {
     changeSlide(slideIndex += 1);
-  }, 3000);
+  }, 5000);
 
 
 
