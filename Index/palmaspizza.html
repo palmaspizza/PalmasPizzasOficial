@@ -2032,13 +2032,22 @@ document.getElementById("Trabajo-button").classList.remove("buttons");
       
           <img  src="https://scontent.fscl35-1.fna.fbcdn.net/v/t1.15752-9/397959438_700337758714823_4138704959227799791_n.png?stp=dst-png_p280x280&_nc_cat=101&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeFd2lYh71UJJxIqTGtQqYlelfmREYMZEWSV-ZERgxkRZPL4E_VYDYrnee_zWaVC9D6Ezy9wUPMddyTg8lw2srf-&_nc_ohc=CI4L46x-KzkAX9gy94T&_nc_ht=scontent.fscl35-1.fna&oh=03_AdSfbP6A15Hq2xqBIG_eul7kF5WDRPwMd6jnESKT4qo9uw&oe=6574ADC8" alt="Imagen giratoria" class="imagen-giratoria">
      <h1 style="color: white;">Palmas Pizza</h1>
-     <button type="button" class="button-select" style="box-shadow: white 1px 1px 8px 1px;" onclick="comenzarpedido();">Comenzar Pedido</button>
-     <br><br><br>
-     <button type="button" style="width: 70%; height: 50px; padding-left: 20%; font-size: 125%; border: #006aff solid 3px; border-radius: 5px; color: #006aff; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" onclick="window.open('https://spotty-dull-neon.glitch.me/Index/palmaspizza.html', '_blank')"><input type="image" src="https://cdn.glitch.global/0cdc0922-4852-4dc1-ac8b-b8e4a4ff2065/chromelogo.png?v=1700514312918" style="position: absolute; width: 35px; margin-left: -15%; margin-top: -8px;" > Abrir en Chrome</button>
+   <center>
+    <button type="button" class="button-select" style="box-shadow: white 1px 1px 8px 1px; display: none;" id="chrome-button" onclick="comenzarpedido();">Comenzar Pedido</button>
+   
+   </center>  <br><br><br>
+     <button type="button" style="width: 70%; height: 50px; padding-left: 20%; font-size: 125%; border: #006aff solid 3px; border-radius: 5px; color: #006aff; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" onclick="window.open('https://spotty-dull-neon.glitch.me/Index/palmaspizza.html', '_blank')"  id="boton-abrir-en-chrome"><input type="image" src="https://cdn.glitch.global/0cdc0922-4852-4dc1-ac8b-b8e4a4ff2065/chromelogo.png?v=1700514312918" style="position: absolute; width: 30px; margin-left: -15%; margin-top: -8px;"> Abrir en Chrome</button>
       </div>
   </div>
 
 
+	<script type="text/javascript">
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+		if (isChrome) {
+			document.getElementById("chrome-button").style.display = "block";
+      document.getElementById("boton-abrir-en-chrome").style.display = "none";
+		}
+	</script>
   
 
 
