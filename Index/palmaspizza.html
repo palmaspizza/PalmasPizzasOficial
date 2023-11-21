@@ -88,7 +88,7 @@ window.onload = function() {
   function italiana() {
     document.getElementById("pizza-italiana-input").value = 'Italiana%0A';
     document.getElementById("ventana-pizza-italiana").hidden = false;
-    document.getElementById('cantidad-italiana-input').value = '1:';
+    document.getElementById('cantidad-italiana-input').value = '1';
   }
 
   function borraritaliana(){
@@ -215,7 +215,7 @@ window.onload = function() {
   function hawaiana() {
     document.getElementById("pizza-hawaiana-input").value = 'Hawaiana%0A';
     document.getElementById("ventana-pizza-hawaiana").hidden = false;
-    document.getElementById('cantidad-hawaiana-input').value = '1:';
+    document.getElementById('cantidad-hawaiana-input').value = '1';
   }
 
   function borrarhawaiana(){
@@ -342,7 +342,7 @@ window.onload = function() {
   function napolitana() {
     document.getElementById("pizza-napolitana-input").value = 'Napolitana%0A';
     document.getElementById("ventana-pizza-napolitana").hidden = false;
-    document.getElementById('cantidad-napolitana-input').value = '1:';
+    document.getElementById('cantidad-napolitana-input').value = '1';
   }
 
   function borrarnapolitana(){
@@ -462,7 +462,7 @@ window.onload = function() {
   function superpepperoni() {
     document.getElementById("pizza-superpepperoni-input").value = 'Super Pepperoni%0A';
     document.getElementById("ventana-pizza-superpepperoni").hidden = false;
-    document.getElementById('cantidad-superpepperoni-input').value = '1:';
+    document.getElementById('cantidad-superpepperoni-input').value = '1';
   }
 
   function borrarsuperpepperoni(){
@@ -584,7 +584,7 @@ window.onload = function() {
   function vegetariana() {
     document.getElementById("pizza-vegetariana-input").value = 'Vegetariana%0A';
     document.getElementById("ventana-pizza-vegetariana").hidden = false;
-    document.getElementById('cantidad-vegetariana-input').value = '1:';
+    document.getElementById('cantidad-vegetariana-input').value = '1';
   }
 
   function borrarvegetariana(){
@@ -703,7 +703,7 @@ window.onload = function() {
   function lucopizza() {
     document.getElementById("pizza-lucopizza-input").value = 'Luco Pizza%0A';
     document.getElementById("ventana-pizza-lucopizza").hidden = false;
-    document.getElementById('cantidad-lucopizza-input').value = '1:';
+    document.getElementById('cantidad-lucopizza-input').value = '1';
   }
 
   function borrarlucopizza(){
@@ -822,7 +822,7 @@ window.onload = function() {
   function cheeseburger() {
     document.getElementById("pizza-cheeseburger-input").value = 'Cheeseburger%0A';
     document.getElementById("ventana-pizza-cheeseburger").hidden = false;
-    document.getElementById('cantidad-cheeseburger-input').value = '1:';
+    document.getElementById('cantidad-cheeseburger-input').value = '1';
   }
 
   function borrarcheeseburger(){
@@ -942,7 +942,7 @@ window.onload = function() {
   function chillian() {
     document.getElementById("pizza-chillian-input").value = 'Chillian%0A';
     document.getElementById("ventana-pizza-chillian").hidden = false;
-    document.getElementById('cantidad-chillian-input').value = '1:';
+    document.getElementById('cantidad-chillian-input').value = '1';
   }
 
   function borrarchillian(){
@@ -1060,7 +1060,7 @@ window.onload = function() {
     function pollobbq() {
       document.getElementById("pizza-pollobbq-input").value = 'Pollo BBQ%0A';
       document.getElementById("ventana-pizza-pollobbq").hidden = false;
-      document.getElementById('cantidad-pollobbq-input').value = '1:';
+      document.getElementById('cantidad-pollobbq-input').value = '1';
     }
   
     function borrarpollobbq(){
@@ -1266,7 +1266,7 @@ window.onload = function() {
 
   function seleccionaringredientes1(){
     seleccionaringredientesuno.play();
-        document.getElementById("input-pizza-uno").value = '*Pizza 1:* %0A';
+        document.getElementById("input-pizza-uno").value = '*Pizza 1* %0A';
   }
 
   function seleccionaringredientes2(){
@@ -2831,8 +2831,8 @@ document.getElementById("ocultar-promociones").hidden = true;
   <!-- ITALIANA -->
   
   
-  <a data-open="ventana-italiana" href="#anchor-pedir-italiana">
-    <div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: 170px; margin-top: 20px;">
+  <a data-open="ventana-italiana" href="#anchor-pedir-italiana" onclick="italiana();popup();agregaralpedidopizza();">
+    <div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: auto; min-height: 170px !important; margin-top: 20px;">
       <button type="button" class="buttons" style="width: 100%; border-radius: 0%;"  onclick="italiana();popup();agregaralpedidopizza();"><span>+</span> Agregar Al Pedido</button>
 
       <img style="border-right: 2px solid #ff8800; height: 115px; width: 120px; border-bottom: 2px solid #ff8800; " class="img-pizza" src="/Pizzas/italiana.png" alt="">
@@ -2873,8 +2873,8 @@ document.getElementById("ocultar-promociones").hidden = true;
 <!-- HAWAIANA -->
 
 
-<a data-open="ventana-hawaiana" href="#anchor-pedir-hawaiana">
-<div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: 170px; margin-top: 20px;">
+<a data-open="ventana-hawaiana" onclick="popup();hawaiana();agregaralpedidopizza();" href="#anchor-pedir-hawaiana">
+<div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: auto; min-height: 170px !important; margin-top: 20px;">
   <button type="button" class="buttons" style="width: 100%; border-radius: 0%;" id="agregar-hawaiana" onclick="popup();hawaiana();agregaralpedidopizza();"><span>+</span> Agregar Al Pedido</button>
 
   <img style="border: 2px solid rgb(255, 136, 0); height: 113px; width: 120px; border-bottom: 0px;" class="img-pizza" src="/Pizzas/hawaiana.png" alt="">
@@ -2908,8 +2908,8 @@ Piña, Jamón</p>
 <!-- NAPOLITANA -->
 
 
-<a data-open="ventana-napolitana" href="#anchor-pedir-napolitana">
-<div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: 170px; margin-top: 20px;">
+<a data-open="ventana-napolitana" href="#anchor-pedir-napolitana" onclick="popup();napolitana();agregaralpedidopizza();">
+<div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: auto !important; min-height: 170px !important; margin-top: 20px;">
   <button type="button" class="buttons" style="width: 100%; border-radius: 0%;" id="agregar-napolitana" onclick="popup();napolitana();agregaralpedidopizza();"><span>+</span> Agregar Al Pedido</button>
 
   <img style="border: 2px solid rgb(255, 136, 0); height: 113px; width: 120px; border-bottom: 0px;" class="img-pizza" src="/Pizzas/napolitana.png" alt="">
@@ -2947,8 +2947,8 @@ Tomate, Aceitunas</p>
 <!-- SUPER PEPPERONI -->
 
 
-<a data-open="ventana-superpepperoni" href="#anchor-pedir-superpepperoni">
-<div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: 170px; margin-top: 20px;">
+<a data-open="ventana-superpepperoni" onclick="popup();napolitana();agregaralpedidopizza();" href="#anchor-pedir-superpepperoni">
+<div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: auto; min-height: 170px !important; margin-top: 20px;">
   <button type="button" class="buttons" style="width: 100%; border-radius: 0%;" id="agregar-superpepperoni" onclick="popup();superpepperoni();agregaralpedidopizza();"><span>+</span> Agregar Al Pedido</button>
 
   <img style="border: 2px solid rgb(255, 136, 0); height: 113px; width: 120px; border-bottom: 0px;" class="img-pizza" src="/Pizzas/superpepperoni.png" alt="">
@@ -2980,8 +2980,8 @@ EXTRA Pepperoni</p>
 <!-- VEGETARIANA -->
 
 
-<a data-open="ventana-vegetariana" href="#anchor-pedir-vegetariana">
-  <div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: 170px; margin-top: 20px;">
+<a data-open="ventana-vegetariana" onclick="popup();vegetariana();agregaralpedidopizza();" href="#anchor-pedir-vegetariana">
+  <div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: auto; min-height: 170px !important; margin-top: 20px;">
     <button type="button" class="buttons" style="width: 100%; border-radius: 0%;" id="agregar-vegetariana" onclick="popup();vegetariana();agregaralpedidopizza();"><span>+</span> Agregar Al Pedido</button>
 
     <img style="border: 2px solid rgb(255, 136, 0); height: 113px; width: 120px; border-bottom: 0px;" class="img-pizza" src="/Pizzas/vegetariana.png" alt="">
@@ -3012,8 +3012,8 @@ EXTRA Pepperoni</p>
 <!-- LUCO PIZZA -->
 
 
-<a data-open="ventana-lucopizza" href="#anchor-pedir-lucopizza">
-<div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: 170px; margin-top: 20px;">
+<a data-open="ventana-lucopizza" onclick="popup();lucopizza();agregaralpedidopizza();" href="#anchor-pedir-lucopizza">
+<div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: auto; min-height: 170px !important; margin-top: 20px;">
   <button type="button" class="buttons" style="width: 100%; border-radius: 0%;" id="agregar-lucopizza" onclick="popup();lucopizza();agregaralpedidopizza();"><span>+</span> Agregar Al Pedido</button>
   
   <img style="border: 2px solid rgb(255, 136, 0); height: 114px; width: 120px; border-bottom: 0px;" class="img-pizza" src="/Pizzas/lucopizza.png" alt="">
@@ -3045,8 +3045,8 @@ EXTRA Pepperoni</p>
 <!-- CHEESEBURGER -->
 
 
-<a data-open="ventana-cheeseburger" href="#anchor-pedir-cheeseburger">
-  <div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: 170px; margin-top: 20px;">
+<a data-open="ventana-cheeseburger" onclick="popup();cheeseburger();agregaralpedidopizza();" href="#anchor-pedir-cheeseburger">
+  <div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: auto; min-height: 170px !important; margin-top: 20px;">
     <button type="button" class="buttons" style="width: 100%; border-radius: 0%;" id="agregar-cheeseburger" onclick="popup();cheeseburger();agregaralpedidopizza();"><span>+</span> Agregar Al Pedido</button>
 
     <img style="border: 2px solid rgb(255, 136, 0); height: 113px; width: 120px; border-bottom: 0px;" class="img-pizza" src="/Pizzas/cheeseburger.png" alt="">
@@ -3079,8 +3079,8 @@ EXTRA Pepperoni</p>
 <!-- POLLO BBQ -->
 
 
-<a data-open="ventana-pollobbq" href="#anchor-pedir-pollobbq">
-<div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: 170px; margin-top: 20px;">
+<a data-open="ventana-pollobbq" onclick="popup();pollobbq();agregaralpedidopizza();" href="#anchor-pedir-pollobbq">
+<div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: auto; min-height: 170px !important; margin-top: 20px;">
   <button type="button" class="buttons" style="width: 100%; border-radius: 0%;" id="agregar-pollobbq" onclick="popup();pollobbq();agregaralpedidopizza();"><span>+</span> Agregar Al Pedido</button>
 
   <img style="border: 2px solid rgb(255, 136, 0); height: 113px; width: 120px; border-bottom: 0px;" class="img-pizza" src="/Pizzas/pollobbq.png" alt="">
@@ -3108,8 +3108,8 @@ EXTRA Pepperoni</p>
 <!-- CHILLIAN -->
 
 
-<a data-open="ventana-chillian" href="#anchor-pedir-chillian">
-<div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: 170px; margin-top: 20px;">
+<a data-open="ventana-chillian" onclick="popup();chillian();agregaralpedidopizza();" href="#anchor-pedir-chillian">
+<div style="border: #ff8900 solid; box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); width: 100%; margin: auto; height: auto; min-height: 170px !important; margin-top: 20px;">
   <button type="button" class="buttons" style="width: 100%; border-radius: 0%;" id="agregar-chillian" onclick="popup();chillian();agregaralpedidopizza();"><span>+</span> Agregar Al Pedido</button>
 
   <img style="border: 2px solid rgb(255, 136, 0); height: 113px; width: 120px; border-bottom: 0px;" class="img-pizza" src="/Pizzas/chillian.png" alt="">

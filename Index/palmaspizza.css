@@ -1146,11 +1146,12 @@ margin-top: 20px;
 
 #finalizar-1 {
   position: absolute;
- margin-left: 290px;
+ margin-left: 288px;
  margin-top: 10px !important;
  z-index: 1672 !important;
  border: #fff solid 3px;
-  font-size: 170% !important;
+ width: auto;
+ font-size: 150% !important;
 }
 
 
@@ -1506,7 +1507,7 @@ margin-top: -115px;
 margin: 0;
 color: rgb(255, 123, 0);
 font-family:  'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold',  Franklin Gothic Medium;
-font-size: 125%;
+font-size: 120%;
 margin-top: 1px !important;
 width: 60%;
 position: relative;
@@ -1514,6 +1515,7 @@ margin: 0;
 margin-left: 125px;
 font-family:  'Franklin Gothic Medium';
 letter-spacing: 0.2px;
+max-height: 170px !important;
 
 }
 
