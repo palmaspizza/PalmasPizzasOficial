@@ -25,11 +25,8 @@ window.onload = function() {
       bienvenido.play();
       document.getElementById('carga').style.display = 'block';
       
-      // Cierra la ventana de carga después de 4 segundos
-      setTimeout(function() {
-          document.getElementById('carga').style.display = 'none';
-      }, 999999999);
-  };</script>
+}
+</script>
   
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <div id="promocion-coca-cola-div" hidden>
@@ -1369,6 +1366,8 @@ function ocultarflecha(){
 
 </script>
 
+<div id="boddydiv" style="display: none;">   
+
 
 <img src="/PalmasPizzaIMG/arrowvercarrito.png" style="z-index: 4999; height: 200px;" id="arrowvercarrito" alt="" hidden>    
 
@@ -1411,8 +1410,6 @@ function ocultarflecha(){
 
       </div>
     
-
-
 
 
 
@@ -2024,15 +2021,6 @@ style="z-index: 1;"
 
 
 
-
-
-
-<div id="boddydiv">
-<body style="overflow: -moz-hidden-unscrollable; " >
-
-
-  
-
     <!-- Ventana de carga -->
     <div class="carga" id="carga">
       <div class="carga-contenido">
@@ -2043,12 +2031,21 @@ style="z-index: 1;"
           <img  src="https://scontent.fscl35-1.fna.fbcdn.net/v/t1.15752-9/397959438_700337758714823_4138704959227799791_n.png?stp=dst-png_p280x280&_nc_cat=101&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeFd2lYh71UJJxIqTGtQqYlelfmREYMZEWSV-ZERgxkRZPL4E_VYDYrnee_zWaVC9D6Ezy9wUPMddyTg8lw2srf-&_nc_ohc=CI4L46x-KzkAX9gy94T&_nc_ht=scontent.fscl35-1.fna&oh=03_AdSfbP6A15Hq2xqBIG_eul7kF5WDRPwMd6jnESKT4qo9uw&oe=6574ADC8" alt="Imagen giratoria" class="imagen-giratoria">
      <h1 style="color: white;">Palmas Pizza</h1>
    <center>
-    <button type="button" class="button-select" style="box-shadow: white 1px 1px 8px 1px; display: none;" id="chrome-button" onclick="comenzarpedido();">Comenzar Pedido</button>
+    <button type="button" class="button-select" style="box-shadow: white 1px 1px 8px 1px; display: none;" id="chrome-button" onclick="comenzarpedido();document.getElementById('boddydiv').style.display = 'block';">Comenzar Pedido</button>
    
    </center>  <br><br><br>
-     <button type="button" style="width: 70%; height: 50px; padding-left: 20%; font-size: 125%; border: #006aff solid 3px; border-radius: 5px; color: #006aff; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" onclick="window.open('https://spotty-dull-neon.glitch.me/Index/palmaspizza.html', '_blank')" ><input type="image" src="https://cdn.glitch.global/0cdc0922-4852-4dc1-ac8b-b8e4a4ff2065/chromelogo.png?v=1700514312918" style="position: absolute; width: 30px; margin-left: -15%; margin-top: -8px;"> Abrir en Chrome</button>
+     <button type="button" style="width: 70%; height: 50px; padding-left: 20%; font-size: 125%; border: #006aff solid 3px; border-radius: 5px; color: #006aff; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" onclick="window.open('https://spotty-dull-neon.glitch.me/Index/palmaspizza.html', '_blank')" ><input type="image" src="https://cdn.glitch.global/0cdc0922-4852-4dc1-ac8b-b8e4a4ff2065/chromelogo.png?v=1700514312918" style="position: absolute; width: 30px; margin-left: -15%; margin-top: -8px; padding: 0px !important;"> Abrir en Chrome</button>
       </div>
   </div>
+
+
+
+
+
+<body style="overflow: -moz-hidden-unscrollable;">
+
+
+  
 
 
 	<script type="text/javascript">
@@ -2102,7 +2099,7 @@ document.getElementById("ocultar-promociones").hidden = true;
     <br><br><br><br><br>
   
     <br><br><br><br><br> <a name="pizzas-anchor"></a> <br> <br><br><br><br><br>
-        
+       
       <br>
     <center>
       <h1 text-decoration="underline black" text-align="center">¿Qué se te antoja Hoy?</h1>
@@ -2297,7 +2294,7 @@ document.getElementById("ocultar-promociones").hidden = true;
      <br><br>
           <br>  
           <footer>
-            <button type="button" class="buttons" style=" width: 100%; height: 70px !important;" data-close="" data-open="selecciona-3-ingredientes" onclick="popup();selectarmatupizza();seleccionarsalsa2();"><span style="margin-left: 5%;">Siguiente ➡️</span></button>
+            <button type="button" class="buttons" style=" width: 100%; height: 70px !important;" data-open="selecciona-3-ingredientes" onclick="popup();selectarmatupizza();seleccionarsalsa2();"><span style="margin-left: 5%;">Siguiente ➡️</span></button>
            
         
           </footer>
