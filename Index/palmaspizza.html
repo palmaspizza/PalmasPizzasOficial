@@ -1802,13 +1802,42 @@ document.getElementById("Trabajo-button").classList.remove("buttons");
 
 
 
+
+
+<script>
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      alert("La geolocalización no es compatible con este navegador.");
+    }
+  }
+  
+  function showPosition(position) {
+    var ubicacion = document.getElementById("direccion");
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    var api_key = "pk.340a34ee53f24cbc4a9c1c3291fe75ed";
+    var url = `https://us1.locationiq.com/v1/reverse.php?key=${api_key}&lat=${latitude}&lon=${longitude}&format=json`;
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        var address = data.display_name;
+        ubicacion.value = address;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert("No se pudo obtener la dirección.");
+      });
+  }
+  </script>
+
 <div id="direccion-div">
 <center>
-  <button type="button" class="button-select" id="Trabajo-button" onclick="Trabajo();tap();" >Trabajo</button>
-  <button type="button" class="button-select" id="Departamento-button" onclick="Departamento();tap();" >Departamento</button>
+  <button type="button" class="button-select" id="Trabajo-button" onclick="getLocation();Trabajo();tap();" >Trabajo</button>
+  <button type="button" class="button-select" id="Departamento-button" onclick="getLocation();Departamento();tap();" >Departamento</button>
   <br><br>
-  <button type="button" class="button-select" id="Casa-button" onclick="Casa();tap();" >Casa</button>
-  <button type="button" class="button-select" id="Otro-button" onclick="Otro();tap();" >Otro</button>
+  <button type="button" class="button-select" id="Casa-button" onclick="getLocation();Casa();tap();" >Casa</button>
   
 </center>
 </div>
@@ -1816,8 +1845,6 @@ document.getElementById("Trabajo-button").classList.remove("buttons");
 <br>
 <div id="otro" hidden>
   <label class="formulario__label" for="label-otro">Otro:</label>
-<textarea  name="" id="input-otro" class="formulario__input" placeholder="Descríbenos tu Dirección..." style="height: auto; width: 100%;"></textarea>
-
 </div>
 
 <div id="departamento" hidden>
@@ -1842,35 +1869,17 @@ document.getElementById("Trabajo-button").classList.remove("buttons");
                              type="text"
                              value=""
                              class="formulario__input"
-                             placeholder="[Calle]"
+                             placeholder="[Dirección]"
                              style=" position: relative; width: 60% !important;"
                            />
                            
-                           <input
-                           style="z-index: 1;"
-                             id="direccionnum"
-                             type="number"
-                             class="formulario__input"
-                             placeholder="[Número]"
-                             style=" position: relative; width: 30% !important; border: #ff5500 solid 2 px; border-top: 0px;"
-                           /> 
+          
 </div>
-<label class="formulario__label" for="label-trabajo">Comuna:</label>
-<input
-style="z-index: 1;"
-  id="comuna"
-  type="text"
-  value=""
-  class="formulario__input"
-  placeholder="[Comuna]"
-  style=" position: relative; width: 60% !important;"
-/>
 
 
 
-</script>
 
-             <div >
+             <div>
               <input 
               readolny disabled
                 class="formulario__input"
