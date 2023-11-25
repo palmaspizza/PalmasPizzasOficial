@@ -268,6 +268,8 @@ height: 60px;
     border-bottom: #ff7700;
     box-shadow: 0px 3px 0px #ff7700;
     transform: translateX(0%);
+    animation-name: inputs;
+    animation-duration: 1s;
   }
 
   .formulario__input:focus::after {
@@ -276,11 +278,27 @@ height: 60px;
     border-bottom: #ff7700;
     box-shadow: 0px 3px 0px #ff7700;
     transform: translateX(0%);
+
   }
 
 
 
-
+  @keyframes inputs {
+    0%{
+  border: #db8046 solid 4px;
+  background: white;
+  color: black;
+  width: 0%;
+    }
+  
+    45%{
+      width: 50%;
+    }
+  
+    90%{
+      width: 100%;
+    }
+  }
 
   /*.formulario__input:focus + .formulario__label{
       margin-top: -120px;
@@ -924,6 +942,9 @@ background: white;
     border: #db8046 solid 3px;
   }
 }
+
+
+
 
 
 
