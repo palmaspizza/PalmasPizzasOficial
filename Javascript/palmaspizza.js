@@ -145,6 +145,297 @@ window.open(url);
 });
 
 
+
+
+setTimeout(() => {
+  document.getElementById("seguircomprando").hidden = true;
+}, "5");
+
+
+let agregar = new Audio('/Index/Sounds/agregar.mp3');
+let pop = new Audio('/Index/Sounds/pop.mp3');
+let tap = new Audio('/Index/Sounds/tap.mp3');
+let seleccionaropcion = new Audio('/Index/Sounds/seleccionaropcion.mp3');
+let ingresardatos = new Audio('/Index/Sounds/ingresatusdatos.mp3');
+let seleccionarsalsauno = new Audio('/Index/Sounds/seleccionarsalsanuno.mp3');
+let seleccionarsalsados = new Audio('/Index/Sounds/seleccionarsalsandos.mp3');
+let seleccionaringredientesuno = new Audio('/Index/Sounds/seleccionaringredientesnuno.mp3');
+let seleccionaringredientesdos = new Audio('/Index/Sounds/seleccionaringredientesndos.mp3');
+let concuantopaga = new Audio('/Index/Sounds/concuantocancelas.mp3');
+let agregardospizzas = new Audio('/Index/Sounds/agregardospizzas.mp3');
+let agregarunapizza = new Audio('/Index/Sounds/agregaunapizza.mp3');
+let finalizarpedidosuperior = new Audio('/Index/Sounds/finalizarelpedidoarrriba.mp3');
+let agregarmasingredientes = new Audio('/Index/Sounds/agregarmasingredientes.mp3');
+let agregartusegundapizza = new Audio('/Index/Sounds/agregarsegundapizza.mp3');
+let enviatupedido = new Audio('/Index/Sounds/enviarpedidoanuestrowhatsapp.mp3')
+let confirmarpedido = new Audio('/Index/Sounds/confirmatupedido.mp3')
+
+function zooms(){
+document.getElementById("headernav").style = "height: 70px; background: #ff8900;"
+document.getElementById("carrito").style = "margin-top: 0; border: 0px;"
+document.getElementById("zooms").hidden = true;
+document.getElementById("signopeso").hidden =  false;
+  document.getElementById("signopeso").hidden = false;
+  document.getElementById("palmaspizzalogofoto").hidden = false;
+  document.getElementById("carrito").hidden = false;
+  document.getElementById("palmaspizzalogo").hidden = false;
+
+}
+
+function OK(){
+document.getElementById("headernav").style = "height: 70px; background: #ff8900;"
+document.getElementById("carrito").style = "margin-top: 0; border: 0px;"
+document.getElementById("seguircomprando").hidden = true;
+document.getElementById("arrowvercarrito").hidden = true;
+}
+
+
+function ocultarflecha(){
+document.getElementById("arrowvercarrito").hidden = true;
+}
+
+function sumartodo(){
+  document.getElementById("pedido-vacio").hidden = true;
+agregar.play();
+}
+
+
+
+function agregarproducto(){
+document.getElementById("pedido-vacio").hidden = true;
+}
+
+
+
+
+
+function unapizza() {
+  document.getElementById("pizzas").value="%0A *🍕Pizza:*%0A"
+}
+
+function pizzas() {
+  document.getElementById("pizzas").value="%0A *🍕Pizzas:*%0A"
+   
+}
+
+
+
+function Trabajo() {
+  document.getElementById("direccion-lugar").value = '*💼Trabajo:*%0A';
+  document.getElementById("trabajo").hidden = false;
+  document.getElementById("casa").hidden = true;
+  document.getElementById("casa-trabajo").hidden = false;
+  document.getElementById("departamento").hidden = true;
+  document.getElementById("otro").hidden = true;
+  document.getElementById("Trabajo-button").classList.add("buttons");
+  document.getElementById("Trabajo-button").classList.remove("button-select");
+  document.getElementById("Departamento-button").classList.add("button-select");
+  document.getElementById("Departamento-button").classList.remove("buttons");
+  document.getElementById("Casa-button").classList.add("button-select");
+  document.getElementById("Casa-button").classList.remove("buttons");
+  document.getElementById("Otro-button").classList.add("button-select");
+  document.getElementById("Otro-button").classList.remove("buttons");
+  }
+  
+  function Departamento() {
+  document.getElementById("direccion-lugar").value = '*🏢Departamento:*%0A';
+  document.getElementById("departamento").hidden = false;
+  document.getElementById("casa-trabajo").hidden = false;
+  document.getElementById("trabajo").hidden = true;
+  document.getElementById("casa").hidden = true;
+  document.getElementById("otro").hidden = true;
+  document.getElementById("Departamento-button").classList.add("buttons");
+  document.getElementById("Departamento-button").classList.remove("button-select");
+  document.getElementById("Trabajo-button").classList.add("button-select");
+  document.getElementById("Trabajo-button").classList.remove("buttons");
+  document.getElementById("Casa-button").classList.add("button-select");
+  document.getElementById("Casa-button").classList.remove("buttons");
+  document.getElementById("Otro-button").classList.add("button-select");
+  document.getElementById("Otro-button").classList.remove("buttons");
+  }
+  
+  
+  
+  function Casa() {
+  document.getElementById("direccion-lugar").value = '*🏠Casa:*%0A';
+  document.getElementById("casa").hidden = false;
+  document.getElementById("trabajo").hidden = true;
+  document.getElementById("otro").hidden = true;
+  document.getElementById("departamento").hidden = true;
+  document.getElementById("casa-trabajo").hidden = false;
+  document.getElementById("Casa-button").classList.add("buttons");
+  document.getElementById("Casa-button").classList.remove("button-select");
+  document.getElementById("Departamento-button").classList.add("button-select");
+  document.getElementById("Departamento-button").classList.remove("buttons");
+  document.getElementById("Trabajo-button").classList.add("button-select");
+  document.getElementById("Trabajo-button").classList.remove("buttons");
+  document.getElementById("Otro-button").classList.add("button-select");
+  document.getElementById("Otro-button").classList.remove("buttons");
+  }
+  
+  
+  
+  
+  function Otro() {
+  document.getElementById("direccion-lugar").value = '*🎲Otro:*%0A';
+  document.getElementById("casa-trabajo").hidden = true;
+  document.getElementById("otro").hidden = false;
+  document.getElementById("casa").hidden = true;
+  document.getElementById("trabajo").hidden = true;
+  document.getElementById("departamento").hidden = true;
+  document.getElementById("Otro-button").classList.add("buttons");
+  document.getElementById("Otro-button").classList.remove("button-select");
+  document.getElementById("Casa-button").classList.add("button-select");
+  document.getElementById("Casa-button").classList.remove("buttons");
+  document.getElementById("Departamento-button").classList.add("button-select");
+  document.getElementById("Departamento-button").classList.remove("buttons");
+  document.getElementById("Trabajo-button").classList.add("button-select");
+  document.getElementById("Trabajo-button").classList.remove("buttons");
+  }
+
+  
+function tapup(){
+  tap.play();
+}
+
+function popup(){
+  pop.play();
+}
+
+function seleccionarunaopcion(){
+  seleccionaropcion.play();
+}
+
+function agregaunapizza(){
+  agregarunapizza.play();
+  document.getElementById("agregar-italiana-2").hidden = false;
+  document.getElementById("agregar-italiana").hidden = true;
+
+  document.getElementById("agregar-hawaiana-2").hidden = false;
+  document.getElementById("agregar-hawaiana").hidden = true;
+
+  document.getElementById("agregar-napolitana-2").hidden = false;
+  document.getElementById("agregar-napolitana").hidden = true;
+
+  document.getElementById("agregar-superpepperoni-2").hidden = false;
+  document.getElementById("agregar-superpepperoni").hidden = true;
+
+  document.getElementById("agregar-chillian-2").hidden = false;
+  document.getElementById("agregar-chillian").hidden = true;
+
+  document.getElementById("agregar-vegetariana-2").hidden = false;
+  document.getElementById("agregar-vegetariana").hidden = true;
+
+  document.getElementById("agregar-lucopizza-2").hidden = false;
+  document.getElementById("agregar-lucopizza").hidden = true;
+
+  document.getElementById("agregar-cheeseburger-2").hidden = false;
+  document.getElementById("agregar-cheeseburger").hidden = true;
+
+  document.getElementById("agregar-pollobbq-2").hidden = false;
+  document.getElementById("agregar-pollobbq").hidden = true;
+
+}
+
+function agregarIngrediente2(valor) {
+  var areaDeTexto = document.getElementById("input-ingredientes-dos");
+  areaDeTexto.value += valor + "\n";
+}
+
+function armatupizzatext(valor) {
+  var textarmatupizza = document.getElementById("text-ingredientes");
+  textarmatupizza.value += valor + "\n";
+}
+
+
+function armatupizzatextoff() {
+document.getElementById('text-ingredientes').value = "";
+}
+
+function verpromociones(){
+document.getElementById("brs").hidden = true;
+document.getElementById("ver-promociones").hidden = true;
+document.getElementById("ocultar-promociones").hidden = false;
+}
+
+function ocultarpromociones(){
+document.getElementById("brs").hidden = false;
+document.getElementById("ver-promociones").hidden = false;
+document.getElementById("ocultar-promociones").hidden = true;
+}
+
+
+let bienvenido = new Audio('/Index/Sounds/bienvenido.mp3');  
+window.onload = function() {
+      bienvenido.play();
+      document.getElementById('carga').style.display = 'block';
+      
+}
+
+
+function ingresartusdatos() {
+  ingresardatos.play();
+}
+
+
+function agregardospizza(){
+  agregardospizzas.play();
+}
+
+function agregaralpedidopizza(){
+  seleccionarlacantidad.play();
+}
+
+function seleccionarsalsa1(){
+  seleccionarsalsauno.play();
+
+}
+
+function agregarotroingrediente(){
+  agregarmasingredientes.play();
+}
+
+function seleccionarsalsa2(){
+  seleccionarsalsados.play();
+}
+
+function seleccionaringredientes1(){
+  seleccionaringredientesuno.play();
+      document.getElementById("input-pizza-uno").value = '*Pizza 1* %0A';
+}
+
+function seleccionaringredientes2(){
+  seleccionaringredientesdos.play();
+  document.getElementById("input-pizza-dos").value = '*Pizza 2:* %0A';
+}
+
+function concuantocancela(){
+  concuantopaga.play();
+}
+
+function finalizarpedidoarriba(){
+  finalizarpedidosuperior.play();
+}
+
+
+  function agregarsegundapizza() {
+  agregartusegundapizza.play();
+}
+
+function enviartupedido(){
+  enviatupedido.play();
+}
+
+function confirmartupedido(){
+  confirmarpedido.play();
+}
+
+
+
+
+
+
+
 function activarBotones() {
   var botones = document.querySelectorAll(".boton-activo");
   for (var i = 0; i < botones.length; i++) {
@@ -342,4 +633,877 @@ areaDeTexto.value += valor + "\n";
     document.querySelector('#cantidad-de-pizzas').value = totalcantidadpizzas;
   }
 
+
+  function removeSumarTodo() {
+    const buttons = document.querySelectorAll('button[onclick*="sumartodo()"]');
+    buttons.forEach(button => {
+      const newOnClick = button.getAttribute('onclick').replace('sumartodo();', '');
+      button.removeEventListener('click', sumartodo);
+      button.setAttribute('onclick', newOnClick);
+    });
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function italiana() {
+    document.getElementById("pizza-italiana-input").value = 'Italiana%0A';
+    document.getElementById("ventana-pizza-italiana").hidden = false;
+    document.getElementById('cantidad-italiana-input').value = '1';
+  }
+
+  function borraritaliana(){
+    document.getElementById("cantidad-italiana-input").value = '';
+    document.getElementById("pizza-italiana-input").value = '';
+    document.getElementById("ventana-pizza-italiana").hidden = true;
+  }
+
+  function agregaritaliana(){
+    document.getElementById("ventana-pizza-italiana").hidden = true;
+    agregar.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+
+    // ITALIANA 
+    document.getElementById("agregar-italiana").hidden = true;
+    document.getElementById("agregar-italiana-1").hidden = false;
+
+    // HAWAIANA 
+    document.getElementById("agregar-hawaiana").hidden = true;
+    document.getElementById("agregar-hawaiana-1").hidden = false;
+    
+    // NAPOLITANA 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+
+     // SUPER PEPPERONI
+     document.getElementById("agregar-superpepperoni").hidden = true;
+    document.getElementById("agregar-superpepperoni-1").hidden = false;
+
+    
+     // VEGETARIANA
+     document.getElementById("agregar-vegetariana").hidden = true;
+    document.getElementById("agregar-vegetariana-1").hidden = false;
+
+    
+     // LUCO PIZZA
+     document.getElementById("agregar-lucopizza").hidden = true;
+    document.getElementById("agregar-lucopizza-1").hidden = false;
+
+    
+     // CHEESEBURGER
+     document.getElementById("agregar-cheeseburger").hidden = true;
+    document.getElementById("agregar-cheeseburger-1").hidden = false;
+
+    
+     // POLLO BBQ
+     document.getElementById("agregar-pollobbq").hidden = true;
+    document.getElementById("agregar-pollobbq-1").hidden = false;
+
+
+    
+     // CHILLIAN
+     document.getElementById("agregar-chillian").hidden = true;
+    document.getElementById("agregar-chillian-1").hidden = false;
+  }
+
+
+
+
+
+
+
+
+
+  function agregaritaliana1(){
+    document.getElementById("ventana-pizza-italiana").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+    document.getElementById('cantidad-italiana-input').value = '2:';
+
+
+    
+  }
+
+
+  
+  function agregaritaliana2(){
+    document.getElementById("ventana-pizza-italiana").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function hawaiana() {
+    document.getElementById("pizza-hawaiana-input").value = 'Hawaiana%0A';
+    document.getElementById("ventana-pizza-hawaiana").hidden = false;
+    document.getElementById('cantidad-hawaiana-input').value = '1';
+  }
+
+  function borrarhawaiana(){
+    document.getElementById("cantidad-hawaiana-input").value = '';
+    document.getElementById("pizza-hawaiana-input").value = '';
+    document.getElementById("ventana-pizza-hawaiana").hidden = true;
+  }
+
+  function agregarhawaiana(){
+    document.getElementById("ventana-pizza-hawaiana").hidden = true;
+    agregar.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+
+    // ITALIANA
+    document.getElementById("agregar-italiana").hidden = true;
+    document.getElementById("agregar-italiana-1").hidden = false;
+
+    // HAWAIANA 
+    document.getElementById("agregar-hawaiana").hidden = true;
+    document.getElementById("agregar-hawaiana-1").hidden = false;
+    
+    // NAPOLITANA 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+
+     // SUPER PEPPERONI
+     document.getElementById("agregar-superpepperoni").hidden = true;
+    document.getElementById("agregar-superpepperoni-1").hidden = false;
+
+    
+     // VEGETARIANA
+     document.getElementById("agregar-vegetariana").hidden = true;
+    document.getElementById("agregar-vegetariana-1").hidden = false;
+
+    
+     // LUCO PIZZA
+     document.getElementById("agregar-lucopizza").hidden = true;
+    document.getElementById("agregar-lucopizza-1").hidden = false;
+
+    
+     // CHEESEBURGER
+     document.getElementById("agregar-cheeseburger").hidden = true;
+    document.getElementById("agregar-cheeseburger-1").hidden = false;
+
+    
+     // POLLO BBQ
+     document.getElementById("agregar-pollobbq").hidden = true;
+    document.getElementById("agregar-pollobbq-1").hidden = false;
+
+
+    
+     // CHILLIAN
+     document.getElementById("agregar-chillian").hidden = true;
+    document.getElementById("agregar-chillian-1").hidden = false;
+  }
+
+
+
+
+
+
+
+
+
+  function agregarhawaiana1(){
+    document.getElementById("ventana-pizza-hawaiana").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+    document.getElementById('cantidad-hawaiana-input').value = '2:';
+
+    
+  }
+
+
+  
+  function agregarhawaiana2(){
+    document.getElementById("ventana-pizza-hawaiana").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  function napolitana() {
+    document.getElementById("pizza-napolitana-input").value = 'Napolitana%0A';
+    document.getElementById("ventana-pizza-napolitana").hidden = false;
+    document.getElementById('cantidad-napolitana-input').value = '1';
+  }
+
+  function borrarnapolitana(){
+    document.getElementById("cantidad-napolitana-input").value = '';
+    document.getElementById("pizza-napolitana-input").value = '';
+    document.getElementById("ventana-pizza-napolitana").hidden = true;
+  }
+
+  function agregarnapolitana(){
+    document.getElementById("ventana-pizza-napolitana").hidden = true;
+    agregar.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+
+    // ITALIANA
+    document.getElementById("agregar-italiana").hidden = true;
+    document.getElementById("agregar-italiana-1").hidden = false;
+
+    // napolitana 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+    
+    // NAPOLITANA 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+
+     // SUPER PEPPERONI
+     document.getElementById("agregar-superpepperoni").hidden = true;
+    document.getElementById("agregar-superpepperoni-1").hidden = false;
+
+    
+     // VEGETARIANA
+     document.getElementById("agregar-vegetariana").hidden = true;
+    document.getElementById("agregar-vegetariana-1").hidden = false;
+
+    
+     // LUCO PIZZA
+     document.getElementById("agregar-lucopizza").hidden = true;
+    document.getElementById("agregar-lucopizza-1").hidden = false;
+
+    
+     // CHEESEBURGER
+     document.getElementById("agregar-cheeseburger").hidden = true;
+    document.getElementById("agregar-cheeseburger-1").hidden = false;
+
+    
+     // POLLO BBQ
+     document.getElementById("agregar-pollobbq").hidden = true;
+    document.getElementById("agregar-pollobbq-1").hidden = false;
+
+
+    
+     // CHILLIAN
+     document.getElementById("agregar-chillian").hidden = true;
+    document.getElementById("agregar-chillian-1").hidden = false;
+  }
+
+
+
+
+
+
+
+
+
+  function agregarnapolitana1(){
+    document.getElementById("ventana-pizza-napolitana").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+
+    
+  }
+
+
+  
+  function agregarnapolitana2(){
+    document.getElementById("ventana-pizza-napolitana").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+    document.getElementById('cantidad-napolitana-input').value = '2:';
+
+
+  }
+
+  function superpepperoni() {
+    document.getElementById("pizza-superpepperoni-input").value = 'Super Pepperoni%0A';
+    document.getElementById("ventana-pizza-superpepperoni").hidden = false;
+    document.getElementById('cantidad-superpepperoni-input').value = '1';
+  }
+
+  function borrarsuperpepperoni(){
+    document.getElementById("cantidad-superpepperoni-input").value = '';
+    document.getElementById("pizza-superpepperoni-input").value = '';
+    document.getElementById("ventana-pizza-superpepperoni").hidden = true;
+  }
+
+  function agregarsuperpepperoni(){
+    document.getElementById("ventana-pizza-superpepperoni").hidden = true;
+    agregar.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+
+     // ITALIANA
+     document.getElementById("agregar-italiana").hidden = true;
+    document.getElementById("agregar-italiana-1").hidden = false;
+
+    // napolitana 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+    
+    // NAPOLITANA 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+
+     // SUPER PEPPERONI
+     document.getElementById("agregar-superpepperoni").hidden = true;
+    document.getElementById("agregar-superpepperoni-1").hidden = false;
+
+    
+     // VEGETARIANA
+     document.getElementById("agregar-vegetariana").hidden = true;
+    document.getElementById("agregar-vegetariana-1").hidden = false;
+
+    
+     // LUCO PIZZA
+     document.getElementById("agregar-lucopizza").hidden = true;
+    document.getElementById("agregar-lucopizza-1").hidden = false;
+
+    
+     // CHEESEBURGER
+     document.getElementById("agregar-cheeseburger").hidden = true;
+    document.getElementById("agregar-cheeseburger-1").hidden = false;
+
+    
+     // POLLO BBQ
+     document.getElementById("agregar-pollobbq").hidden = true;
+    document.getElementById("agregar-pollobbq-1").hidden = false;
+
+
+    
+     // CHILLIAN
+     document.getElementById("agregar-chillian").hidden = true;
+    document.getElementById("agregar-chillian-1").hidden = false;
+  }
+
+
+
+
+
+
+
+
+
+  function agregarsuperpepperoni1(){
+    document.getElementById("ventana-pizza-superpepperoni").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+    document.getElementById('cantidad-superpepperoni-input').value = '2:';
+
+
+    
+  }
+
+
+  
+  function agregarsuperpepperoni2(){
+    document.getElementById("ventana-pizza-superpepperoni").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+  }
+
+
+
+  function vegetariana() {
+    document.getElementById("pizza-vegetariana-input").value = 'Vegetariana%0A';
+    document.getElementById("ventana-pizza-vegetariana").hidden = false;
+    document.getElementById('cantidad-vegetariana-input').value = '1';
+  }
+
+  function borrarvegetariana(){
+    document.getElementById("cantidad-vegetariana-input").value = '';
+    document.getElementById("pizza-vegetariana-input").value = '';
+    document.getElementById("ventana-pizza-vegetariana").hidden = true;
+  }
+
+  function agregarvegetariana(){
+    document.getElementById("ventana-pizza-vegetariana").hidden = true;
+    agregar.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+   // ITALIANA
+   document.getElementById("agregar-italiana").hidden = true;
+    document.getElementById("agregar-italiana-1").hidden = false;
+
+    // napolitana 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+    
+    // NAPOLITANA 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+
+     // SUPER PEPPERONI
+     document.getElementById("agregar-superpepperoni").hidden = true;
+    document.getElementById("agregar-superpepperoni-1").hidden = false;
+
+    
+     // VEGETARIANA
+     document.getElementById("agregar-vegetariana").hidden = true;
+    document.getElementById("agregar-vegetariana-1").hidden = false;
+
+    
+     // LUCO PIZZA
+     document.getElementById("agregar-lucopizza").hidden = true;
+    document.getElementById("agregar-lucopizza-1").hidden = false;
+
+    
+     // CHEESEBURGER
+     document.getElementById("agregar-cheeseburger").hidden = true;
+    document.getElementById("agregar-cheeseburger-1").hidden = false;
+
+    
+     // POLLO BBQ
+     document.getElementById("agregar-pollobbq").hidden = true;
+    document.getElementById("agregar-pollobbq-1").hidden = false;
+
+
+    
+     // CHILLIAN
+     document.getElementById("agregar-chillian").hidden = true;
+    document.getElementById("agregar-chillian-1").hidden = false;
+  }
+
+
+
+
+
+
+
+
+
+  function agregarvegetariana1(){
+    document.getElementById("ventana-pizza-vegetariana").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+    document.getElementById('cantidad-vegetarian-input').value = '2:';
+
+    
+  }
+
+
+  
+  function agregarvegetariana2(){
+    document.getElementById("ventana-pizza-vegetariana").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+  }
+
+
+
+  function lucopizza() {
+    document.getElementById("pizza-lucopizza-input").value = 'Luco Pizza%0A';
+    document.getElementById("ventana-pizza-lucopizza").hidden = false;
+    document.getElementById('cantidad-lucopizza-input').value = '1';
+  }
+
+  function borrarlucopizza(){
+    document.getElementById("cantidad-lucopizza-input").value = '';
+    document.getElementById("pizza-lucopizza-input").value = '';
+    document.getElementById("ventana-pizza-lucopizza").hidden = true;
+  }
+
+  function agregarlucopizza(){
+    document.getElementById("ventana-pizza-lucopizza").hidden = true;
+    agregar.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+   // ITALIANA
+   document.getElementById("agregar-italiana").hidden = true;
+    document.getElementById("agregar-italiana-1").hidden = false;
+
+    // napolitana 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+    
+    // NAPOLITANA 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+
+     // SUPER PEPPERONI
+     document.getElementById("agregar-superpepperoni").hidden = true;
+    document.getElementById("agregar-superpepperoni-1").hidden = false;
+
+    
+     // VEGETARIANA
+     document.getElementById("agregar-vegetariana").hidden = true;
+    document.getElementById("agregar-vegetariana-1").hidden = false;
+
+    
+     // LUCO PIZZA
+     document.getElementById("agregar-lucopizza").hidden = true;
+    document.getElementById("agregar-lucopizza-1").hidden = false;
+
+    
+     // CHEESEBURGER
+     document.getElementById("agregar-cheeseburger").hidden = true;
+    document.getElementById("agregar-cheeseburger-1").hidden = false;
+
+    
+     // POLLO BBQ
+     document.getElementById("agregar-pollobbq").hidden = true;
+    document.getElementById("agregar-pollobbq-1").hidden = false;
+
+
+    
+     // CHILLIAN
+     document.getElementById("agregar-chillian").hidden = true;
+    document.getElementById("agregar-chillian-1").hidden = false;
+  }
+
+
+
+
+
+
+
+
+
+  function agregarlucopizza1(){
+    document.getElementById("ventana-pizza-lucopizza").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+    document.getElementById('cantidad-lucopizza-input').value = '2:';
+
+
+    
+  }
+
+
+  
+  function agregarlucopizza2(){
+    document.getElementById("ventana-pizza-lucopizza").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+  }
+
+
+  function cheeseburger() {
+    document.getElementById("pizza-cheeseburger-input").value = 'Cheeseburger%0A';
+    document.getElementById("ventana-pizza-cheeseburger").hidden = false;
+    document.getElementById('cantidad-cheeseburger-input').value = '1';
+  }
+
+  function borrarcheeseburger(){
+    document.getElementById("cantidad-cheeseburger-input").value = '';
+    document.getElementById("pizza-cheeseburger-input").value = '';
+    document.getElementById("ventana-pizza-cheeseburger").hidden = true;
+  }
+
+  function agregarcheeseburger(){
+    document.getElementById("ventana-pizza-cheeseburger").hidden = true;
+    agregar.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+
+      // ITALIANA
+      document.getElementById("agregar-italiana").hidden = true;
+    document.getElementById("agregar-italiana-1").hidden = false;
+
+    // napolitana 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+    
+    // NAPOLITANA 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+
+     // SUPER PEPPERONI
+     document.getElementById("agregar-superpepperoni").hidden = true;
+    document.getElementById("agregar-superpepperoni-1").hidden = false;
+
+    
+     // VEGETARIANA
+     document.getElementById("agregar-vegetariana").hidden = true;
+    document.getElementById("agregar-vegetariana-1").hidden = false;
+
+    
+     // LUCO PIZZA
+     document.getElementById("agregar-lucopizza").hidden = true;
+    document.getElementById("agregar-lucopizza-1").hidden = false;
+
+    
+     // CHEESEBURGER
+     document.getElementById("agregar-cheeseburger").hidden = true;
+    document.getElementById("agregar-cheeseburger-1").hidden = false;
+
+    
+     // POLLO BBQ
+     document.getElementById("agregar-pollobbq").hidden = true;
+    document.getElementById("agregar-pollobbq-1").hidden = false;
+
+
+    
+     // CHILLIAN
+     document.getElementById("agregar-chillian").hidden = true;
+    document.getElementById("agregar-chillian-1").hidden = false;
+  }
+
+
+
+
+
+
+
+
+
+  function agregarcheeseburger1(){
+    document.getElementById("ventana-pizza-cheeseburger").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+    document.getElementById('cantidad-cheeseburger-input').value = '2:';
+
+
+    
+  }
+
+
+  
+  function agregarcheeseburger2(){
+    document.getElementById("ventana-pizza-cheeseburger").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+  }
+
+
+
+
+  function chillian() {
+    document.getElementById("pizza-chillian-input").value = 'Chillian%0A';
+    document.getElementById("ventana-pizza-chillian").hidden = false;
+    document.getElementById('cantidad-chillian-input').value = '1';
+  }
+
+  function borrarchillian(){
+    document.getElementById("cantidad-chillian-input").value = '';
+    document.getElementById("pizza-chillian-input").value = '';
+    document.getElementById("ventana-pizza-chillian").hidden = true;
+  }
+
+  function agregarchillian(){
+    document.getElementById("ventana-pizza-chillian").hidden = true;
+    agregar.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+
+    // ITALIANA
+    document.getElementById("agregar-italiana").hidden = true;
+    document.getElementById("agregar-italiana-1").hidden = false;
+
+    // napolitana 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+    
+    // NAPOLITANA 
+    document.getElementById("agregar-napolitana").hidden = true;
+    document.getElementById("agregar-napolitana-1").hidden = false;
+
+     // SUPER PEPPERONI
+     document.getElementById("agregar-superpepperoni").hidden = true;
+    document.getElementById("agregar-superpepperoni-1").hidden = false;
+
+    
+     // VEGETARIANA
+     document.getElementById("agregar-vegetariana").hidden = true;
+    document.getElementById("agregar-vegetariana-1").hidden = false;
+
+    
+     // LUCO PIZZA
+     document.getElementById("agregar-lucopizza").hidden = true;
+    document.getElementById("agregar-lucopizza-1").hidden = false;
+
+    
+     // CHEESEBURGER
+     document.getElementById("agregar-cheeseburger").hidden = true;
+    document.getElementById("agregar-cheeseburger-1").hidden = false;
+
+    
+     // POLLO BBQ
+     document.getElementById("agregar-pollobbq").hidden = true;
+    document.getElementById("agregar-pollobbq-1").hidden = false;
+
+
+    
+     // CHILLIAN
+     document.getElementById("agregar-chillian").hidden = true;
+    document.getElementById("agregar-chillian-1").hidden = false;
+  }
+
+
+
+
+
+
+
+
+
+  function agregarchillian1(){
+    document.getElementById("ventana-pizza-chillian").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+    document.getElementById('cantidad-chillian-input').value = '2:';
+
+
+    
+  }
+
+
+  
+  function agregarchillian2(){
+    document.getElementById("ventana-pizza-chillian").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+  }
+
+
+
+
+
+
+  function pollobbq() {
+    document.getElementById("pizza-pollobbq-input").value = 'Pollo BBQ%0A';
+    document.getElementById("ventana-pizza-pollobbq").hidden = false;
+    document.getElementById('cantidad-pollobbq-input').value = '1';
+  }
+
+  function borrarpollobbq(){
+    document.getElementById("cantidad-pollobbq-input").value = '';
+    document.getElementById("pizza-pollobbq-input").value = '';
+    document.getElementById("ventana-pizza-pollobbq").hidden = true;
+  }
+
+  function agregarpollobbq(){
+    document.getElementById("ventana-pizza-pollobbq").hidden = true;
+    agregar.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+   // ITALIANA
+   document.getElementById("agregar-italiana").hidden = true;
+  document.getElementById("agregar-italiana-1").hidden = false;
+
+  // napolitana 
+  document.getElementById("agregar-napolitana").hidden = true;
+  document.getElementById("agregar-napolitana-1").hidden = false;
+  
+  // NAPOLITANA 
+  document.getElementById("agregar-napolitana").hidden = true;
+  document.getElementById("agregar-napolitana-1").hidden = false;
+
+   // SUPER PEPPERONI
+   document.getElementById("agregar-superpepperoni").hidden = true;
+  document.getElementById("agregar-superpepperoni-1").hidden = false;
+
+  
+   // VEGETARIANA
+   document.getElementById("agregar-vegetariana").hidden = true;
+  document.getElementById("agregar-vegetariana-1").hidden = false;
+
+  
+   // LUCO PIZZA
+   document.getElementById("agregar-lucopizza").hidden = true;
+  document.getElementById("agregar-lucopizza-1").hidden = false;
+
+  
+   // CHEESEBURGER
+   document.getElementById("agregar-cheeseburger").hidden = true;
+  document.getElementById("agregar-cheeseburger-1").hidden = false;
+
+  
+   // POLLO BBQ
+   document.getElementById("agregar-pollobbq").hidden = true;
+  document.getElementById("agregar-pollobbq-1").hidden = false;
+
+
+  
+   // CHILLIAN
+   document.getElementById("agregar-chillian").hidden = true;
+  document.getElementById("agregar-chillian-1").hidden = false;
+  }
+
+
+
+
+
+
+
+
+
+  function agregarpollobbq1(){
+    document.getElementById("ventana-pizza-pollobbq").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+    document.getElementById('cantidad-pollobbq-input').value = '2:';
+
+    
+  }
+
+
+  
+  function agregarpollobbq2(){
+    document.getElementById("ventana-pizza-pollobbq").hidden = true;
+    finalizarpedidosuperior.play();
+    document.getElementById("pedido-vacio").hidden = true;
+
+
+  }
 
