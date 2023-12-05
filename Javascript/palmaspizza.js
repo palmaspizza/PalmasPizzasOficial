@@ -741,7 +741,7 @@ areaDeTexto.value += valor + "\n";
     document.getElementById("ventana-pizza-italiana").hidden = true;
     finalizarpedidosuperior.play();
     document.getElementById("pedido-vacio").hidden = true;
-    document.getElementById('cantidad-italiana-input').value = '2:';
+    document.getElementById('cantidad-italiana-input').value = '2';
 
 
     
