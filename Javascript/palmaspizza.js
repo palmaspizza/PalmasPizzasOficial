@@ -206,6 +206,10 @@ document.getElementById("pedido-vacio").hidden = true;
 }
 
 
+function formatNumber(input) {
+  input.value = input.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 
 
 
