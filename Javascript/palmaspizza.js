@@ -128,7 +128,7 @@ ${pizzados}%0A
 ${armatupizzasalsados}%0A
 ${armatupizzaingredientesdos}%0A
 🛎️====FIN====🛎️%0A
-💴 *Total:* _$${total}_%0A%0A
+💴 *SubTotal:* _$${total}_%0A%0A
 *Envía Este Mensaje ➡️*`
 
 
