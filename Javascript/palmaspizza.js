@@ -111,7 +111,7 @@ ${direccionlugar}+${direccion}+${direccionnum}%0A
 ${inputdepartamento}+${otro}%0A
 --------------------- %0A
 _Ubicación Aproximada:
-${UbicacionActual}_
+${UbicacionActual}
 --------------------- %0A
 🛎️== *PEDIDO* == 🛎️ %0A
 ${formatopizzas}
@@ -491,7 +491,7 @@ function activarBotones() {
 function sumaring() {
   document.getElementById('cantidading').value++
   var cantidad = document.getElementById("cantidading").value;
-  if (cantidad == 4) {
+  if (cantidad == 3) {
     document.getElementById("more-ing").hidden = false;
     agregarmasingredientes.play();
   }
@@ -507,7 +507,7 @@ function restaring2(){
 function sumaring2() {
   document.getElementById('2-cantidading').value++
   var cantidad = document.getElementById("2-cantidading").value;
-  if (cantidad == 4) {
+  if (cantidad == 3) {
     document.getElementById("2-more-ing").hidden = false;
     agregarmasingredientes.play();
   }
@@ -560,7 +560,7 @@ areaDeTexto.value += valor + "\n";
     }
 
     document.getElementById('2-cantidading').addEventListener('input', function() {
-      if (this.value == 4) {
+      if (this.value == 3) {
         document.getElementById('2-more-ing').hidden = false;
         
       }
