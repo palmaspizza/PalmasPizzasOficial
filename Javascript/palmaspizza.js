@@ -491,7 +491,7 @@ function activarBotones() {
 function sumaring() {
   document.getElementById('cantidading').value++
   var cantidad = document.getElementById("cantidading").value;
-  if (cantidad == 3) {
+  if (cantidad == 4) {
     document.getElementById("more-ing").hidden = false;
     agregarmasingredientes.play();
   }
@@ -507,7 +507,7 @@ function restaring2(){
 function sumaring2() {
   document.getElementById('2-cantidading').value++
   var cantidad = document.getElementById("2-cantidading").value;
-  if (cantidad == 3) {
+  if (cantidad == 4) {
     document.getElementById("2-more-ing").hidden = false;
     agregarmasingredientes.play();
   }
@@ -560,7 +560,7 @@ areaDeTexto.value += valor + "\n";
     }
 
     document.getElementById('2-cantidading').addEventListener('input', function() {
-      if (this.value == 3) {
+      if (this.value == 4) {
         document.getElementById('2-more-ing').hidden = false;
         
       }
