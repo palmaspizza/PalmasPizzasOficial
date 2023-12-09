@@ -14,10 +14,12 @@ const formadepago = document.querySelector("#formadepago").value;
 const cancelocon = document.querySelector("#cancelocon").value;
 const pagacon = document.querySelector("#pagacon").value;
 const direccionlugar = document.querySelector("#direccion-lugar").value;
+const UbicacionActual = document.querySelector("#ubicacion-actual").value;
 const otro = document.querySelector("#input-otro").value;
 const direccion = document.querySelector("#direccion").value;
 const direccionnum = document.querySelector("#direccionnum").value;
 const inputdepartamento = document.querySelector("#inputdepartamento").value;
+
 
 
 // FORMATO
@@ -108,6 +110,9 @@ ${cancelocon} $${pagacon}%0A
 ${direccionlugar}+${direccion}+${direccionnum}%0A
 ${inputdepartamento}+${otro}%0A
 --------------------- %0A
+_Ubicación Aproximada:
+${UbicacionActual}_
+--------------------- %0A
 🛎️== *PEDIDO* == 🛎️ %0A
 ${formatopizzas}
 ${pizzas}%0A
@@ -143,6 +148,36 @@ resp.innerHTML = ` Pedido de ${nombre} ENVIADO`;
 
 window.open(url);
 });
+
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+      var ubicacionActual = latitude + ", " + longitude;
+      document.getElementById("ubicacion-actual").value = ubicacionActual;
+
+      // Construye la URL para la solicitud de Geocoding
+      var geocodingApiUrl = "https://nominatim.openstreetmap.org/reverse?format=json&lat=" + latitude + "&lon=" + longitude;
+
+      // Realiza la solicitud a la API de Geocoding
+      fetch(geocodingApiUrl)
+        .then(response => response.json())
+        .then(data => {
+          // Obtiene la dirección legible por humanos de la respuesta
+          var direccion = data.display_name;
+
+          // Actualiza el valor del elemento con la dirección
+          document.getElementById("ubicacion-actual").value = direccion;
+        })
+        .catch(error => console.error(error));
+    });
+  } else {
+    alert("Tu navegador no soporta la API de geolocalización.");
+  }
+}
+
 
 
 
