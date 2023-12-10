@@ -491,11 +491,21 @@ function activarBotones() {
 function sumaring() {
   document.getElementById('cantidading').value++
   var cantidad = document.getElementById("cantidading").value;
-  if (cantidad == 3) {
+  if (cantidad == 4) {
     document.getElementById("more-ing").hidden = false;
     agregarmasingredientes.play();
   }
-}
+  if (cantidad == 3) {
+    coste1000();mostraringspans();
+  }
+  if (cantidad == 2) {
+    seleccionaringredientesuno.play();
+  }
+  if (cantidad == 1) {
+    seleccionaringredientesuno.play();
+  }
+
+  }
 
 
 function restaring2(){
@@ -507,10 +517,20 @@ function restaring2(){
 function sumaring2() {
   document.getElementById('2-cantidading').value++
   var cantidad = document.getElementById("2-cantidading").value;
-  if (cantidad == 3) {
+  if (cantidad == 4) {
     document.getElementById("2-more-ing").hidden = false;
     agregarmasingredientes.play();
   }
+  if (cantidad == 3) {
+    coste10002();mostraringspans2();
+  }
+  if (cantidad == 2) {
+    seleccionaringredientesdos.play();
+  }
+  if (cantidad == 1) {
+    seleccionaringredientesdos.play();
+  }
+
 }
 
 
@@ -557,10 +577,11 @@ textarea.value = nuevoContenido;
 function agregarIngrediente(valor) {
 var areaDeTexto = document.getElementById("input-ingredientes");
 areaDeTexto.value += valor + "\n";
+
     }
 
     document.getElementById('2-cantidading').addEventListener('input', function() {
-      if (this.value == 3) {
+      if (this.value == 4) {
         document.getElementById('2-more-ing').hidden = false;
         
       }
@@ -594,7 +615,7 @@ areaDeTexto.value += valor + "\n";
     document.getElementById("promocion-coca-cola").hidden = false;
  
   }
-
+  
 
   let slideIndex = 1;
   showSlide(slideIndex);
