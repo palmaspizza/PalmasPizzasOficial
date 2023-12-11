@@ -249,8 +249,36 @@ height: 90px;
 
 
 
+.div-pizza-box {
+border: 10px solid #ff6a00;
+padding: 0 !important;
+position: relative;
+margin-bottom: 49px;
+border-color: #FF8800;
+width: 99%;
+display: center;
+}
+
+.pizza-img {
+  width: 40%;
+  border: 2px solid black;
+  border-bottom: 2px solid #000;
+}
 
 
 
+.agregar-al-pedido-button{
+  float: right;
+  position: absolute;
+  margin-left: -40%;
+  margin-top: 40%;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  padding: 5%;
+  border: #fff solid 2px;
+  border-top: 2px solid black;
+}
 
-
+#name-cheeseburger{
+  font-size: 170% !important;
+}

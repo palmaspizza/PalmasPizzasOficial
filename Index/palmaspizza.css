@@ -500,30 +500,17 @@ position: relative;
   position: relative;
 }
 
-.nombre-pizza {
-position: relative;
-margin: 0;
-margin-left: 110px;
-font-family:  'Franklin Gothic Medium';
-font-size: 190%;
-margin-top: -100px;
 
-}
 
 .ing-pizza {
-margin: 0;
-color: rgb(255, 123, 0);
+color: #ff5500;
 font-family:  'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold',  Franklin Gothic Medium;
-font-size: 148%;
-margin-left: 30%;
-margin-top: 16px !important;
+font-size: 138%;
+margin-left: 41%;
 width: 60%;
-position: relative;
-margin: 0;
-margin-left: 110px;
+position: absolute;
 font-family:  'Franklin Gothic Medium';
-letter-spacing: 1px;
-
+margin-top: -30%;
 }
 
 .precio-pizza {
@@ -1515,30 +1502,15 @@ position: relative;
 }
 
 .nombre-pizza {
-position: relative;
+position: absolute;
 margin: 0;
-margin-left: 125px;
+margin-left: 42%;
 font-family:  'Franklin Gothic Medium';
-font-size: 160% !important;
-margin-top: -115px;
-
+font-size: 190% !important;
+margin-top: -40%;
+padding-bottom: 30%;
 }
 
-.ing-pizza {
-margin: 0;
-color: rgb(255, 123, 0);
-font-family:  'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold',  Franklin Gothic Medium;
-font-size: 120%;
-margin-top: 1px !important;
-width: 60%;
-position: relative;
-margin: 0;
-margin-left: 125px;
-font-family:  'Franklin Gothic Medium';
-letter-spacing: 0.2px;
-max-height: 170px !important;
-
-}
 
 .ing-arma-tu-pizza {
   margin: 0;
