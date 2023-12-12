@@ -109,9 +109,9 @@ ${cancelocon} $${pagacon}%0A
 ---------------------%0A
 ${direccionlugar}+${direccion}+${direccionnum}%0A
 ${inputdepartamento}+${otro}%0A
---------------------- %0A
-_Ubicación Aproximada:
-${UbicacionActual}
+--------------------- %0A%0A
+_Ubicación Aproximada:+
+${UbicacionActual}_%0A%0A
 --------------------- %0A
 🛎️== *PEDIDO* == 🛎️ %0A
 ${formatopizzas}
@@ -485,7 +485,9 @@ function activarBotones() {
   }
 }
 
-
+function  agregarpizza(){
+  sound.play();
+}
 
 
 function sumaring() {
@@ -664,6 +666,8 @@ areaDeTexto.value += valor + "\n";
     document.getElementById("pedido-vacio").hidden = true;
     document.getElementById('1-pizza-familiar').hidden= false;
     document.getElementById("pedido-vacio").hidden = true;
+    document.getElementById("spans-S-1").hidden = true;
+    document.getElementById("spans-S-2").hidden = true;
   }
 
   function unamediana(){
@@ -671,6 +675,8 @@ areaDeTexto.value += valor + "\n";
     document.getElementById("todo").hidden = false;
     document.getElementById('1-pizza-mediana').hidden= false;
     document.getElementById("pedido-vacio").hidden = true;
+    document.getElementById("spans-S-1").hidden = true;
+    document.getElementById("spans-S-2").hidden = true;
   }
 
 
@@ -783,6 +789,10 @@ areaDeTexto.value += valor + "\n";
      // CHILLIAN
      document.getElementById("agregar-chillian").hidden = true;
     document.getElementById("agregar-chillian-1").hidden = false;
+
+       // superbeef
+   document.getElementById("agregar-superbeef").hidden = true;
+   document.getElementById("agregar-superbeef-1").hidden = false;
   }
 
 
@@ -885,6 +895,10 @@ areaDeTexto.value += valor + "\n";
      // CHILLIAN
      document.getElementById("agregar-chillian").hidden = true;
     document.getElementById("agregar-chillian-1").hidden = false;
+
+       // superbeef
+   document.getElementById("agregar-superbeef").hidden = true;
+   document.getElementById("agregar-superbeef-1").hidden = false;
   }
 
 
@@ -986,6 +1000,10 @@ areaDeTexto.value += valor + "\n";
      // CHILLIAN
      document.getElementById("agregar-chillian").hidden = true;
     document.getElementById("agregar-chillian-1").hidden = false;
+
+       // superbeef
+   document.getElementById("agregar-superbeef").hidden = true;
+   document.getElementById("agregar-superbeef-1").hidden = false;
   }
 
 
@@ -1077,6 +1095,10 @@ areaDeTexto.value += valor + "\n";
      // CHILLIAN
      document.getElementById("agregar-chillian").hidden = true;
     document.getElementById("agregar-chillian-1").hidden = false;
+
+       // superbeef
+   document.getElementById("agregar-superbeef").hidden = true;
+   document.getElementById("agregar-superbeef-1").hidden = false;
   }
 
 
@@ -1168,6 +1190,10 @@ areaDeTexto.value += valor + "\n";
      // CHILLIAN
      document.getElementById("agregar-chillian").hidden = true;
     document.getElementById("agregar-chillian-1").hidden = false;
+
+       // superbeef
+   document.getElementById("agregar-superbeef").hidden = true;
+   document.getElementById("agregar-superbeef-1").hidden = false;
   }
 
 
@@ -1259,6 +1285,10 @@ areaDeTexto.value += valor + "\n";
      // CHILLIAN
      document.getElementById("agregar-chillian").hidden = true;
     document.getElementById("agregar-chillian-1").hidden = false;
+
+       // superbeef
+   document.getElementById("agregar-superbeef").hidden = true;
+   document.getElementById("agregar-superbeef-1").hidden = false;
   }
 
 
@@ -1350,6 +1380,10 @@ areaDeTexto.value += valor + "\n";
      // CHILLIAN
      document.getElementById("agregar-chillian").hidden = true;
     document.getElementById("agregar-chillian-1").hidden = false;
+
+       // superbeef
+   document.getElementById("agregar-superbeef").hidden = true;
+   document.getElementById("agregar-superbeef-1").hidden = false;
   }
 
 
@@ -1379,6 +1413,101 @@ areaDeTexto.value += valor + "\n";
 
 
   }
+
+
+
+
+  
+function superbeef() {
+  document.getElementById("pizza-superbeef-input").value = 'superbeef%0A';
+  document.getElementById("ventana-pizza-superbeef").hidden = false;
+  document.getElementById('cantidad-superbeef-input').value = '1';
+}
+
+function borrarsuperbeef(){
+  document.getElementById("cantidad-superbeef-input").value = '';
+  document.getElementById("pizza-superbeef-input").value = '';
+  document.getElementById("ventana-pizza-superbeef").hidden = true;
+}
+
+function agregarsuperbeef(){
+  document.getElementById("ventana-pizza-superbeef").hidden = true;
+  agregar.play();
+  document.getElementById("pedido-vacio").hidden = true;
+
+
+
+  // ITALIANA
+  document.getElementById("agregar-italiana").hidden = true;
+  document.getElementById("agregar-italiana-1").hidden = false;
+
+  // napolitana 
+  document.getElementById("agregar-napolitana").hidden = true;
+  document.getElementById("agregar-napolitana-1").hidden = false;
+  
+  // CHILLIAN 
+  document.getElementById("agregar-chillian").hidden = true;
+  document.getElementById("agregar-chillian-1").hidden = false;
+
+   // SUPER PEPPERONI
+   document.getElementById("agregar-superpepperoni").hidden = true;
+  document.getElementById("agregar-superpepperoni-1").hidden = false;
+
+  
+   // VEGETARIANA
+   document.getElementById("agregar-vegetariana").hidden = true;
+  document.getElementById("agregar-vegetariana-1").hidden = false;
+
+  
+   // LUCO PIZZA
+   document.getElementById("agregar-lucopizza").hidden = true;
+  document.getElementById("agregar-lucopizza-1").hidden = false;
+
+  
+   // CHEESEBURGER
+   document.getElementById("agregar-cheeseburger").hidden = true;
+  document.getElementById("agregar-cheeseburger-1").hidden = false;
+
+  
+   // POLLO BBQ
+   document.getElementById("agregar-pollobbq").hidden = true;
+  document.getElementById("agregar-pollobbq-1").hidden = false;
+
+
+  
+   // superbeef
+   document.getElementById("agregar-superbeef").hidden = true;
+  document.getElementById("agregar-superbeef-1").hidden = false;
+}
+
+
+
+
+
+
+
+
+
+function agregarsuperbeef1(){
+  document.getElementById("ventana-pizza-superbeef").hidden = true;
+  finalizarpedidosuperior.play();
+  document.getElementById("pedido-vacio").hidden = true;
+  document.getElementById('cantidad-superbeef-input').value = '2:';
+
+
+  
+}
+
+
+
+function agregarsuperbeef2(){
+  document.getElementById("ventana-pizza-superbeef").hidden = true;
+  finalizarpedidosuperior.play();
+  document.getElementById("pedido-vacio").hidden = true;
+
+
+}
+
 
 
 
@@ -1443,6 +1572,11 @@ areaDeTexto.value += valor + "\n";
      // CHILLIAN
      document.getElementById("agregar-chillian").hidden = true;
     document.getElementById("agregar-chillian-1").hidden = false;
+
+      
+   // superbeef
+   document.getElementById("agregar-superbeef").hidden = true;
+   document.getElementById("agregar-superbeef-1").hidden = false;
   }
 
 
@@ -1537,6 +1671,10 @@ areaDeTexto.value += valor + "\n";
    // CHILLIAN
    document.getElementById("agregar-chillian").hidden = true;
   document.getElementById("agregar-chillian-1").hidden = false;
+
+     // superbeef
+     document.getElementById("agregar-superbeef").hidden = true;
+     document.getElementById("agregar-superbeef-1").hidden = false;
   }
 
 
