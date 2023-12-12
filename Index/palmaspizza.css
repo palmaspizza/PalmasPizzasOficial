@@ -346,8 +346,9 @@ height: 60px;
     width: 100%;
     height: 0px;
     margin: 0px;
-    padding: 0px;
+    padding: 40px;
     margin-bottom: 5%;
+    font-size: 150%;
   }
   #respuesta.fail {
     color: red;
@@ -1516,20 +1517,18 @@ padding-bottom: 30%;
   margin: 0;
   color: rgb(0, 0, 0) !important;
   font-family:  'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold',  Franklin Gothic Medium;
-  font-size: 18px;
   margin-top: 1px !important;
   width: 60.9%;
   position: relative;
   margin: 0;
-  margin-left: 125px;
+  margin-left: 40%;
   font-family:  'Franklin Gothic Medium';
-  letter-spacing: 0.2px;
   }
 
   .nombre-arma-tu-pizza {
     position: relative;
     margin: 0;
-    margin-left: 125px;
+    margin-left: 40%;
     font-family:  'Franklin Gothic Medium';
     font-size: 200%;
     margin-top: -115px;
