@@ -1505,7 +1505,7 @@ position: relative;
 .nombre-pizza {
 position: absolute;
 margin: 0;
-margin-left: 42%;
+margin-left: 45%;
 font-family:  'Franklin Gothic Medium';
 font-size: 190% !important;
 margin-top: -40%;
@@ -1521,14 +1521,14 @@ padding-bottom: 30%;
   width: 60.9%;
   position: relative;
   margin: 0;
-  margin-left: 40%;
+  margin-left: 45%;
   font-family:  'Franklin Gothic Medium';
   }
 
   .nombre-arma-tu-pizza {
     position: relative;
     margin: 0;
-    margin-left: 40%;
+    margin-left: 45%;
     font-family:  'Franklin Gothic Medium';
     font-size: 200%;
     margin-top: -115px;
