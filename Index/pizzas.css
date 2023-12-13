@@ -277,6 +277,7 @@ display: center;
   padding: 5%;
   border: #fff solid 2px;
   border-top: 2px solid black;
+  text-align: left;
 }
 
 #name-cheeseburger{
@@ -284,5 +285,5 @@ display: center;
 }
 
 .span-S{
-  
+
 }
