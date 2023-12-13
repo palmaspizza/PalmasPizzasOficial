@@ -25,7 +25,7 @@ style="z-index: 1;" id="comuna" type="text" value="" class="formulario__input" p
  class="formulario__input" style="border-bottom: #000; height: 5px;"
                /><label style="margin-left: 0px; font-size: 170%; color: black;" for="formadepago" class="formulario__label">Forma de pago:</label><br><button onclick="popup();inputefectivo();concuantocancela()" type="button" id="efectivo" value="💵Efectivo✅" style="padding-top: 9px; color: #ff7700;" class="open-modal button-select" data-open="concuantocancela">
                   Efectivo
-                  </button><div class="btn-group"><div class="modal" id="concuantocancela" data-animation="slideInOutLeft"><div style="height: auto; z-index: 5;" class="modal-dialog"><head style="background-color: black !important;"><h2 class="formulario__titulo" style="font-size: 150% !important;">¿Con cuanto cancela?</h2></head><section class="modal-content"><label for="pagacon"></label><input
+                  </button><div class="btn-group"><div class="modal" id="concuantocancela" data-animation="slideInOutLeft"><div style="height: auto; z-index: 5;" class="modal-dialog"><head style="background-color: black !important;"><h2 class="formulario__titulo" style="font-size: 20px !important;">¿Con cuanto cancela?</h2></head><section class="modal-content"><label for="pagacon"></label><input
  
  id="pagacon" type="number"  oninput="formatNumber(this)" placeholder="$00.000" class="formulario__input" style="color: rgb(1, 128, 1) !; padding: 0; width: 60%; font-size: 22px; text-align: center; margin: auto; margin-bottom: 30px; font-family: Arial, Helvetica,  Franklin Gothic Medium;" /><label for="cancelocon"></label><input type="text" id="cancelocon" hidden><button id="listo" onclick="enviartupedido();popup();canceloconx()" type="button" class="button" style="z-index: 5; position: relative; text-align: center; padding-left: 25px; padding-right: 25px; padding-top: 12px !important; padding-bottom: 12px !important; z-index: 4; position: relative; text-align: center; padding: 10px; padding-top: 10px; padding-bottom: 10px; margin: auto !important; font-size: 125%; margin-right: 200px !important; margin-top: 50px !important; padding: 10px; width: 80%; margin: auto !important;" data-close="">
                                  Listo
@@ -44,7 +44,7 @@ style="z-index: 1;" id="comuna" type="text" value="" class="formulario__input" p
       
   <br><br><br><br><br><br><br><center><h1 text-decoration="underline black" text-align="center">¿Qué se te antoja Hoy?</h1><input type="text" id="ubicacion-actual" hidden><h1 style="color: #ff5500; text-decoration: underline black;">Arma tu Pizza</h1>   <br><br><br><br>   </center><div class="div-pizza-box" style="border-color: black !important;">
     <img style="border-right: 2px solid rgb(0, 0, 0); border-bottom: #000000 solid 3px;" class="pizza-img" src="https://th.bing.com/th/id/OIG.j4Mdf12ohzZBcQ_LMtBe?pid=ImgGn&w=1024&h=1024&rs=1">
-<p class="nombre-pizza" style="font-size: 150% !important; color: #ff5500; text-decoration: underline black; ">ARMA TU PIZZA</p>
+<p class="nombre-pizza" style="font-size: 20px !important; color: #ff5500; text-decoration: underline black; ">ARMA TU PIZZA</p>
 <p style="font-size: 120% !important; color: black;" class="ing-pizza">Crea tu propia <span style="color: #ff5500;">PIZZA</span> con la salsa e ingredientes a <span style="color: #ff5500;">TU GUSTO</span></p>
 <button data-open="selecciona-3-ingredientes" type="button" class="buttons" style="width: 100%; border-radius: 0%; border: 2px solid #fff;" onclick="popup();seleccionarsalsa1()"><span>+</span> ARMAR MI<span id="spans-S-1">S</span> PIZZA<span id="spans-S-2">S</span> 🍕</button>
 
@@ -70,8 +70,8 @@ style="z-index: 1;" id="comuna" type="text" value="" class="formulario__input" p
           <div class="div-pizza-box">
 <img src="/Pizzas/italiana.png" class="pizza-img" alt="">
 <p class="nombre-pizza">ITALIANA</p>
-<button onclick="popup();italiana();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 150% !important;">+ Agregar</button>
-<p style="font-size: 115% !important;" class="ing-pizza">Salsa, Queso:
+<button onclick="popup();italiana();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 20px !important;">+ Agregar</button>
+<p  class="ing-pizza">Salsa, Queso:
   <br> Champiñón, Aceituna, Pepperoni, Salchicha</p>
           </div>
 
@@ -79,7 +79,7 @@ style="z-index: 1;" id="comuna" type="text" value="" class="formulario__input" p
             <div class="div-pizza-box">
 <img src="/Pizzas/hawaiana.png" class="pizza-img" alt="">
 <p class="nombre-pizza">HAWAIANA</p>
-<button  onclick="popup();hawaiana();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 150% !important;">+ Agregar</button>
+<button  onclick="popup();hawaiana();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 20px !important;">+ Agregar</button>
 <p class="ing-pizza">Salsa, Queso: <br>
   Piña, Jamón</p>
           </div>
@@ -87,8 +87,8 @@ style="z-index: 1;" id="comuna" type="text" value="" class="formulario__input" p
 <br><br>  <br><br>
           <div  class="div-pizza-box">
             <img src="/Pizzas/napolitana.png" class="pizza-img" x alt="">
-            <p class="nombre-pizza" style="font-size: 165% !important; margin-top: -40% !important;" >NAPOLITANA</p>
-            <button onclick="popup();napolitana();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 150% !important;">+ Agregar</button>
+            <p class="nombre-pizza" style="margin-top: -40% !important;" >NAPOLITANA</p>
+            <button onclick="popup();napolitana();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 20px !important;">+ Agregar</button>
             <p class="ing-pizza">Salsa, Queso: <br>
               Tomate, Aceitunas</p>
                       </div>
@@ -96,8 +96,8 @@ style="z-index: 1;" id="comuna" type="text" value="" class="formulario__input" p
                       <br><br>  <br><br>
           <div  class="div-pizza-box">
             <img src="/Pizzas/superpepperoni.png" class="pizza-img" alt="">
-            <p style="font-size: 150% !important;" class="nombre-pizza">SUPER PEPPERONI</p>
-            <button onclick="popup();superpepperoni();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 150% !important;">+ Agregar</button>
+            <p style="font-size: 20px !important;" class="nombre-pizza">SUPER PEPPERONI</p>
+            <button onclick="popup();superpepperoni();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 20px !important;">+ Agregar</button>
             <br><br><br> <p style="margin-top: -30% !important;" class="ing-pizza">Salsa, Queso: <br>
               Extra Pepperoni</p>
                       </div>
@@ -106,8 +106,8 @@ style="z-index: 1;" id="comuna" type="text" value="" class="formulario__input" p
                       <br><br>  <br><br>
           <div  class="div-pizza-box">
             <img src="/Pizzas/vegetariana.png" class="pizza-img" alt="">
-            <p style="font-size: 160% !important; " class="nombre-pizza">VEGETARIANA</p>
-            <button onclick="popup();vegetariana();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 150% !important;">+ Agregar</button>
+            <p style="font-size: 24px !important; " class="nombre-pizza">VEGETARIANA</p>
+            <button onclick="popup();vegetariana();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 20px !important;">+ Agregar</button>
             <br><br><br> <p style="margin-top: -43%;" class="ing-pizza">Salsa, Queso: <br>
               Cebolla, Tomate, Champiñón, Choclo, Pimentón</p>
                       </div>
@@ -117,15 +117,15 @@ style="z-index: 1;" id="comuna" type="text" value="" class="formulario__input" p
                       <div  class="div-pizza-box">
                         <img src="/Pizzas/lucopizza.png" class="pizza-img" alt="">
                         <p class="nombre-pizza">LUCOPIZZA</p>
-                        <button onclick="popup();lucopizza();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 150% !important;">+ Agregar</button>
+                        <button onclick="popup();lucopizza();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 20px !important;">+ Agregar</button>
                         <br><br><br> <p style=" margin-top: -40% !important;" class="ing-pizza">Salsa, Queso: <br>
                           Tomate, Churrasco, Oregano.</p>
                                   </div>
                                                         <br><br>
           <div  class="div-pizza-box">
             <img src="/Pizzas/cheeseburger.png" class="pizza-img" alt="">
-            <p  style="font-size: 135% !important;"  id="name-cheeseburger" class="nombre-pizza">CHEESEBURGER</p>
-            <button onclick="popup();cheeseburger();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 150% !important;">+ Agregar</button>
+            <p id="name-cheeseburger" class="nombre-pizza">CHEESEBURGER</p>
+            <button onclick="popup();cheeseburger();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 20px !important;">+ Agregar</button>
             <br><br><br> <p style="margin-top: -35%; font-size: 125%;" class="ing-pizza">Salsa BBQ, Queso: <br>
               Cebolla, Tocino, Carne</p>
                       </div>
@@ -135,7 +135,7 @@ style="z-index: 1;" id="comuna" type="text" value="" class="formulario__input" p
           <div  class="div-pizza-box">
             <img src="/Pizzas/pollobbq.png" class="pizza-img" alt="">
             <p class="nombre-pizza">POLLO BBQ</p>
-            <button onclick="popup();pollobbq();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 150% !important;">+ Agregar</button>
+            <button onclick="popup();pollobbq();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 20px !important;">+ Agregar</button>
             <br><br><br> <p style="margin-top: -40% !important;" class="ing-pizza">Salsa BBQ, Queso: <br>
               Cebolla, Pollo, Tocino</p>
                       </div>
@@ -144,7 +144,7 @@ style="z-index: 1;" id="comuna" type="text" value="" class="formulario__input" p
                       <div  class="div-pizza-box">
                         <img src="/Pizzas/chillian.png" class="pizza-img" alt="">
                         <p class="nombre-pizza">CHILLIAN</p>
-                        <button onclick="popup();chillian();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 150% !important;">+ Agregar</button>
+                        <button onclick="popup();chillian();agregaralpedidopizza();" type="button" class="buttons agregar-al-pedido-button" style="font-size: 20px !important;">+ Agregar</button>
                         <br><br><br> <p style="margin-top: -40%;" class="ing-pizza">Salsa, Queso: <br>
                           Jamón, Pepperoni, Pimentón, Cebolla.
                           
