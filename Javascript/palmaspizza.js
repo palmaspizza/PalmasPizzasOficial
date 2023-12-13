@@ -99,6 +99,10 @@ const resp = document.querySelector("#respuesta");
 resp.classList.remove("fail");
 resp.classList.remove("send");
 
+
+
+
+
 const url = `https://api.whatsapp.com/send?phone=56952323555&text=
 *🍕=Palmas Pizza=🍕*%0A
 👤${nombre} %0A%0A
@@ -179,8 +183,23 @@ function getLocation() {
 }
 
 
+function openChrome() {
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (isChrome) {
+    alert("Ya estás en Chrome");
+  } else {
+    window.open("googlechrome://newtab", "_blank");
+  }
+}
 
-
+function openChrome() {
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (isChrome) {
+    alert("Ya estás en Chrome");
+  } else {
+    window.open("googlechrome://newtab", "_blank");
+  }
+}
 
 setTimeout(() => {
   document.getElementById("seguircomprando").hidden = true;
