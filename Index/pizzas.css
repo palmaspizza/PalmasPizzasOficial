@@ -280,5 +280,9 @@ display: center;
 }
 
 #name-cheeseburger{
-  font-size: 170% !important;
+  font-size: auto  !important;
+}
+
+.span-S{
+  
 }
