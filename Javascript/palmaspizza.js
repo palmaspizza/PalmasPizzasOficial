@@ -192,14 +192,6 @@ function openChrome() {
   }
 }
 
-function openChrome() {
-  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (isChrome) {
-    alert("Ya estás en Chrome");
-  } else {
-    window.open("googlechrome://newtab", "_blank");
-  }
-}
 
 setTimeout(() => {
   document.getElementById("seguircomprando").hidden = true;
