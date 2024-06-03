@@ -349,14 +349,21 @@ height: 60px;
     padding: 40px;
     margin-bottom: 5%;
     font-size: 150%;
+    background-color: #fff;
   }
   #respuesta.fail {
     color: red;
   }
   #respuesta.send {
     color: green;
+    background-color: #fff !important;
   }
   
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
   #telefono {
     padding-left: 45px;
     background-color: transparent;
@@ -503,17 +510,7 @@ position: relative;
 
 
 
-.ing-pizza {
-color: #ff5500;
-font-family:  'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold',  Franklin Gothic Medium;
-font-size: 138%;
-margin-left: 41%;
-width: 60%;
-position: absolute;
-font-family:  'Franklin Gothic Medium';
-margin-top: -30%;
-background-color: #fff;
-}
+
 
 .precio-pizza {
   margin: 0;
@@ -906,16 +903,14 @@ width: 35%
 
 
 
-
-#finalizar-pedido-button {
-
+#pedir-de-nuevo {
   animation-duration: 1s;
-  animation-name: finalizarpedido;
+  animation-name: pedirdenuevo;
   animation-iteration-count: infinite;
 
 }
 
-@keyframes finalizarpedido {
+@keyframes pedirdenuevo {
   0%{
 border: #db8046 solid 3px;
 color: #ff5500;
@@ -933,7 +928,57 @@ background: white;
 }
 
 
+#finalizar-pedido-button, #finalizar-1 {
 
+  animation-duration: 1s;
+  animation-name: finalizarpedido;
+  animation-iteration-count: infinite;
+
+
+}
+
+@keyframes finalizarpedido {
+  0%{
+border: #db8046 solid 3px;
+color: #ff5500;
+background: white;
+color: black;
+  }
+
+  50%{
+
+    font-size:x-large ;
+    color: #fff;
+  }
+
+  100%{
+    border: #db8046 solid 3px;
+  }
+}
+
+
+
+#calificanos, #armar-mis-pizzas-button {
+
+  animation-duration: 1s;
+  animation-name: calificanos;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes calificanos {
+  0%{
+border: #ffffff solid 5px;
+  }
+
+  50%{
+border: #000000 5px;
+  }
+
+  100%{
+    border: #ff7b00 solid 5px;
+  }
+}
 
 
 
@@ -1115,9 +1160,10 @@ body {
 .headernav {
  width: 100%;
  height: 70px;
+ margin-top: 0px !important;
  background: #ff8900;
  position: fixed;
- z-index: 342;
+ z-index: 1999999999999999999999999999999999999999999999999999999999999999999999294342 !important;
  border-bottom: solid 2px #000000;
 }
 
@@ -1127,7 +1173,7 @@ body {
   background-color: #ffffff;
 z-index: 9 !important;
 margin-top: 6px;
-max-width: 130px;
+max-width: 108px;
 border-top-right-radius: 8px;
 border-bottom-right-radius: 8px;
 font-size: 150% !important;
@@ -1136,7 +1182,7 @@ font-size: 170% !important;
 letter-spacing: 1px;
 font-family:  'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold',  Franklin Gothic Medium;
 border-left: 0px;
-padding-left: 40px;
+padding-left: 20px;
 margin-left: 155px !important;
 }
 
@@ -1149,14 +1195,14 @@ color: #ff6a00;
 font-size: 190% !important;
 font-family:  'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold',  Franklin Gothic Medium;
 border-left: 0px;
-margin-left: 190px;
+margin-left: 175px;
 margin-top: 20px;
 }
 
 
 #finalizar-1 {
   position: absolute;
- margin-left: 288px;
+ margin-left: 265px;
  margin-top: 10px !important;
  z-index: 1672 !important;
  border: #fff solid 3px;
@@ -1503,15 +1549,7 @@ position: relative;
   position: relative;
 }
 
-.nombre-pizza {
-position: absolute;
-margin: 0;
-margin-left: 42%;
-font-family:  'Franklin Gothic Medium';
-font-size: 170% !important;
-margin-top: -40%;
-padding-bottom: 30%;
-}
+
 
 
 .ing-arma-tu-pizza {
@@ -1569,8 +1607,16 @@ a{
 
 
 
-.input__cantidad{
-  width: 20px;
+.cantidad-pizza{
+  position: absolute;
+  width: 35px;
+  border-color: orange;
+  font-size: 200%;
+  margin-left: 1%;
+  padding-right: 0px;
+  color: orangered;
+  background: transparent;
+  border: 0px;
 }
 
 .quitar {
@@ -1954,8 +2000,39 @@ meta[name="theme-color"] {
   
     }
   
+    .nombre-pizza {
+      position: absolute;
+      margin-left: 70%;
+      font-family:  'Impact';
+      font-size: 200% !important;
+      margin-top: -60%;
+      }
+
+
+
+
+      .ing-pizza {
+        position: absolute;
+        font-family:  'Impact';
+        font-size: 100% !important;
+        margin-top: -10%;
+        border-radius: 5%;
+        border-color: #ff5500;
+        border: 5px solid orange;
+        border-bottom: 5px solid orangered;
+        background: orangered;
+        color: white;
+        height: 10%;
+        width: auto;
+        float: left !important;
+        margin-left: -45%;
+        z-index: 45;
+        }
   
-  
+        select:disabled {
+          color: #fff !important;
+          background-color: white;
+      }
   
   button:active {
     background-color: #ff8900;
@@ -2094,6 +2171,9 @@ nav {
 
 
 
-
+.button-tamaño {
+  font-size: 100% !important;
+  margin: 5%;
+  }
 
 

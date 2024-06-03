@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../.data"
+		},
+		{
+			"path": "../.git"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Javascript"
+		},
+		{
+			"path": "../PalmasPizzaIMG"
+		},
+		{
+			"path": "../Pizzas"
+		}
+	]
+}
