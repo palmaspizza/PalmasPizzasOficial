@@ -720,7 +720,7 @@ height: 47px;
   position: fixed;
   margin-top: 6px;
   background-color: transparent;
-  z-index: 138737874843784 !important;
+  z-index: 1671 !important;
   padding-right: 45%;
   height: 50px !important;
 }
@@ -939,7 +939,7 @@ background: white;
 
 @keyframes finalizarpedido {
   0%{
-border: #db8046 solid 3px;
+border: #000000 solid 3px;
 color: #ff5500;
 background: white;
 color: black;
@@ -952,7 +952,7 @@ color: black;
   }
 
   100%{
-    border: #db8046 solid 3px;
+    border: #ffffff solid 3px;
   }
 }
 
@@ -1163,7 +1163,7 @@ body {
  margin-top: 0px !important;
  background: #ff8900;
  position: fixed;
- z-index: 1999999999999999999999999999999999999999999999999999999999999999999999294342 !important;
+ z-index: 1671 !important;
  border-bottom: solid 2px #000000;
 }
 
@@ -1208,6 +1208,27 @@ margin-top: 20px;
  border: #fff solid 3px;
  width: auto;
  font-size: 150% !important;
+}
+
+#capaOscurecedora {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+/* Contenido del Modal */
+.contenidoVentanaModal {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 
@@ -1847,7 +1868,7 @@ height: 47px;
   position: fixed;
   margin-top: 6px;
   background-color: transparent;
-  z-index: 138737874843784 !important;
+  z-index: 1671 !important;
   padding-right: 45%;
   height: 56px !important;
   margin-left: 35px;

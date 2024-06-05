@@ -447,6 +447,16 @@ function ingresartusdatos() {
 }
 
 
+var modal = document.getElementById('miVentanaModalUnica');
+
+// Cuando el usuario haga clic en cualquier lugar fuera del modal, ciérralo
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Para mostrar el modal
 
 
 
@@ -948,7 +958,15 @@ function familiaresdos(){
     document.getElementById("ventana-pizza-italiana").hidden = true;
     agregar.play();
     document.getElementById("pedido-vacio").hidden = true;
-  
+
+  }
+
+  function agregaritaliana1(){
+    finalizarpedidosuperior.play();
+    document.getElementById("ventana-pizza-italiana").hidden = true;
+    document.getElementById("pedido-vacio").hidden = true;
+    document.getElementById("finalizar-1").hidden = false;
+    agregar.play();
   }
   
   
@@ -1053,16 +1071,20 @@ function familiaresdos(){
     document.getElementById("ventana-pizza-napolitana").hidden = true;
     document.getElementById("pedido-vacio").hidden = true;
     document.getElementById("finalizar-1").hidden = false;
+   document.getElementById("miVentanaModalUnica").style.display = 'block';
     agregar.play();
 
 
   }
+
+
 
   function agregarhawaiana1(){
     finalizarpedidosuperior.play();
     document.getElementById("ventana-pizza-hawaiana").hidden = true;
     document.getElementById("pedido-vacio").hidden = true;
     document.getElementById("finalizar-1").hidden = false;
+   document.getElementById("miVentanaModalUnica").style.display = 'block';
     agregar.play();
 
 
@@ -1074,6 +1096,7 @@ function familiaresdos(){
     document.getElementById("ventana-pizza-superpepperoni").hidden = true;
     document.getElementById("pedido-vacio").hidden = true;
     document.getElementById("finalizar-1").hidden = false;
+   document.getElementById("miVentanaModalUnica").style.display = 'block';
     agregar.play();
 
 
@@ -1123,6 +1146,7 @@ function familiaresdos(){
     document.getElementById("ventana-pizza-vegetariana").hidden = true;
     document.getElementById("pedido-vacio").hidden = true;
     document.getElementById("finalizar-1").hidden = false;
+    document.getElementById("miVentanaModalUnica").style.display = 'block';
     agregar.play();
 
 
@@ -1169,6 +1193,7 @@ function familiaresdos(){
     document.getElementById("ventana-pizza-lucopizza").hidden = true;
     document.getElementById("pedido-vacio").hidden = true;
     document.getElementById("finalizar-1").hidden = false;
+    document.getElementById("miVentanaModalUnica").style.display = 'block';
     agregar.play();
 
 
@@ -1223,6 +1248,7 @@ function familiaresdos(){
     document.getElementById("ventana-pizza-cheeseburger").hidden = true;
     document.getElementById("pedido-vacio").hidden = true;
     document.getElementById("finalizar-1").hidden = false;
+    document.getElementById("miVentanaModalUnica").style.display = 'block';
     agregar.play();
 
 
@@ -1253,6 +1279,7 @@ function agregarsuperbeef1(){
   document.getElementById("pedido-vacio").hidden = true;
   document.getElementById('cantidad-superbeef-input').value = '2:';
   document.getElementById("finalizar-1").hidden = false;
+  document.getElementById("miVentanaModalUnica").style.display = 'block';
   agregar.play();
 
   
@@ -1306,6 +1333,7 @@ function agregarsuperbeef2(){
     document.getElementById("ventana-pizza-chillian").hidden = true;
     document.getElementById("pedido-vacio").hidden = true;
     document.getElementById("finalizar-1").hidden = false;
+    document.getElementById("miVentanaModalUnica").style.display = 'block';
     agregar.play();
 
 
@@ -1361,6 +1389,7 @@ function agregarsuperbeef2(){
     document.getElementById("ventana-pizza-pollobbq").hidden = true;
     document.getElementById("pedido-vacio").hidden = true;
     document.getElementById("finalizar-1").hidden = false;
+    document.getElementById("miVentanaModalUnica").style.display = 'block';
     agregar.play();
 
 
