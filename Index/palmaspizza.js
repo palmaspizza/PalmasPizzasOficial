@@ -961,13 +961,7 @@ function familiaresdos(){
 
   }
 
-  function agregaritaliana1(){
-    finalizarpedidosuperior.play();
-    document.getElementById("ventana-pizza-italiana").hidden = true;
-    document.getElementById("pedido-vacio").hidden = true;
-    document.getElementById("finalizar-1").hidden = false;
-    agregar.play();
-  }
+
   
   
   

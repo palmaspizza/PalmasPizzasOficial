@@ -9,6 +9,16 @@
     <button type="button" id="agregar-italiana" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="popup();agregaritaliana();sumartodo();" >Si</button>
     <button type="button" id="agregar-italiana-1" class="buttons" style="text-align: center; width: 70%; font-size: 70% !important;" onclick="popup();agregaritaliana1();sumartodo();" >Si</button>
     
+<script>
+    function agregaritaliana1(){
+    finalizarpedidosuperior.play();
+    document.getElementById("ventana-pizza-italiana").hidden = true;
+    document.getElementById("pedido-vacio").hidden = true;
+    document.getElementById("finalizar-1").hidden = false;
+    agregar.play();
+  }
+</script>
+
     <br><button type="button" class="button-select" style="margin-top: 10px; text-align: center; width: 65%; font-size: 60%;" onclick="tapup();borraritaliana();">No</button></div></div></center>
   </div>
     <div id="ventana-pizza-hawaiana" style="position: absolute;" hidden><center><div style="height: 100%; display: grid; text-align: center; z-index: 523; background: rgba(0, 0, 0, 0.796); width: 100%; position: fixed; color: #000000c0; box-shadow: 150px 0px 250px 450px; border: 2px solid black;"><div style="background-color: #00000094;border-radius: 8px;width: 100%;height: 100%;"><h1 style="background-color: #fff; border-radius: 15px; padding: 5px; padding-top: 30px; padding-bottom: 20px; color: #ff5500; width: auto; text-align: center; margin: auto; margin-top: 20%; font-size: 200%; text-align: center;">¿Deseas Agregar?
